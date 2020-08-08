@@ -51,7 +51,7 @@ function validarEspacios(e){
     }
     else{
         if(contraseña == "123456" && correo == "admin@gmail.com"){
-            window.location.href = 'InterfazAdmin.html'
+            window.location.href = '../admin/interface-admin.html'
         }
         else if( contraseña == "987654" && correo == "cliente1@gmail.com"){
             window.location.href = 'InterfazCliente.html'

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <!--datables CSS básico-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../datatables/datatables.min.css"
+    />
+    <!--datables estilo bootstrap 4 CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/interface-admin.css" />
+    <link rel="stylesheet" type="text/css" href="../css/datatables1.css" />
+
+    <!-- Google Fonts -->
+    
+
+    <!-- Ionic Icons -->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d3a62d8a35.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="d-flex" id="content-wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-container" class="bg-light border-right">
+        <div class="logo">
+          <img src="../img/logo.png" class="logo" />
+        </div>
+        <hr class="hr-line" />
+        <div class="menu list-group-flush">
+          <a
+            href="interface-admin.html"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-chart-bar lead mr-2"></i>Panel Principal</a
+          >
+          <a
+            href="reservas-hoy.html"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Hoy</a
+          >
+          <a
+            href="reservas-todas.html"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-calendar-alt lead mr-2"></i>Todas las reservas</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-desktop lead mr-2"></i>Equipos Activos</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-wrench lead mr-2"></i>Mantenimiento Preventivo</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a
+          >
+          <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
+          <a
+            href="#"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-user-astronaut lead mr-2"></i>Usuarios</a
+          >
+          <a
+            href="#"
+            class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+            ><i class="fas fa-hands-helping lead mr-2"></i>Ayuda</a
+          >
+        </div>
+      </div>
+      <!-- Fin sidebar -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="w-100 bg-light-blue">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <button
+              class="btn btn-primary text-dark font-weight-bold"
+              id="menu-toggle"
+            >
+              Mostrar / Esconder Menu
+            </button>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link text-light dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    ><img
+                      src="../img/testimonials-2.jpg"
+                      class="img-fluid rounded-circle avatar mr-2"
+                    />
+                    Sebastian Martinez
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a class="dropdown-item" href="perfil-admin.html">Mi perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../index.html"
+                      >Cerrar sesión</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Page Content -->
+        <div id="content" class="bg-grey w-100">
+          <section class="bg-light-blue py-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-9 col-md-8">
+                  <h1 class="font-weight-bold mb-0 text-dark">Equipos Activos</h1>
+                  <p class="lead text-dark">
+                    En esta ventana podra ver los equipos disponibes, tambien agregar, borrar o editar un equipo.
+                  </p>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                    Agregar Equipo
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-warning" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Agregar Nuevo Equipo</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-container">
+                                <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-microchip text text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="procesador"
+                                        placeholder="Procesador"
+                                        list="Procesador"
+                                      />
+                                      <datalist id="Procesador">
+                                        <option id="p1" value="Ryzen 5 3600"></option>
+                                        <option id="p2" value="Core i5 9600k"></option>
+                                        <option id="p3" value="Ryzen 5 2400g"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-memory text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="ram"
+                                        placeholder="Memoria Ram"
+                                        list="Ram"
+                                      />
+                                      <datalist id="Ram">
+                                        <option id="r1" value="4GB"></option>
+                                        <option id="r2" value="8GB"></option>
+                                        <option id="r2" value="16GB"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-digital-tachograph text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="tarjeta-grafica"
+                                        placeholder="Tarjeta Grafica"
+                                        list="tarjeta-grafica"
+                                      />
+                                      <datalist id="tarjeta-grafica">
+                                        <option id="tg1" value="RX580 4Gb"></option>
+                                        <option id="tg2" value="GTX 1650 4GB"></option>
+                                        <option id="tg2" value="GTX 1060 6GB"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-hdd text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="tipo-almacenamiento"
+                                        placeholder="Cantidad y tipo de Almacenamiento"
+                                        list="tipo-almacenamiento"
+                                      />
+                                      <datalist id="tipo-almacenamiento">
+                                        <option id="HDD1" value="Disco Duro 1TB"></option>
+                                        <option id="SSD" value="Disco Solido 512GB"></option>
+                                        <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-desktop text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="pantalla"
+                                        placeholder="Pantalla"
+                                        list="pantalla"
+                                        />
+                                      <datalist id="pantalla">
+                                        <option id="pant1" value="22 Pulgadas"></option>
+                                        <option id="pant2" value="27 Pulgadas"></option>
+                                        <option id="pant3" value="20 Pulgadas"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-charging-station text-dark "></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="fuente"
+                                        placeholder="Fuente"
+                                        list="fuente"
+                                      />
+                                      <datalist id="fuente">
+                                        <option id="f1" value="Fuente 600W reales"></option>
+                                        <option id="f2" value="Fuente 450W genericos"></option>
+                                        <option id="f3" value="Fuente 300W genericos"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-border-all text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="board"
+                                        placeholder="Board"
+                                        list="board"
+                                      />
+                                      <datalist id="board">
+                                        <option id="b1" value="B450M"></option>
+                                        <option id="b2" value="B350M"></option>
+                                        <option id="b2" value="B650M"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-light-blue py-4 mb-5">
+            <!-- Parte principal -->
+            <div class="container mb-5">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="table-responsive">
+                    <table
+                      id="example"
+                      class="table table-striped table-bordered table-hover"
+                      cellspacing="0"
+                      width="100%"
+                    >
+                    <thead>
+                        <th>IdEquipo</th>
+                        <th>Procesador</th><th>Ram</th><th>Tarjeta Grafica</th><th>Almacenamiento</th><th>Pantalla</th><th>Board</th><th>Fuente</th><th>Estado</th><th>Acciones</th>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td >Ryzen 5 3600</td><td>8</td><td>RX580 4Gb</td><td>1TB HDD / 256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 500W</td><td>Activo</td>
+                            <td>
+                                <div class="row d-flex">
+                                <div class="col-lg-4 col-sm-4">
+                                    <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                </div>
+                                <div class="col-lg-7 col-sm-7">
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ryzen 5 2400g</td><td>16</td><td>GTX 1650 4GB</td><td>1TB HDD</td><td>Samsung 22"</td><td>B350M</td><td>CM 500W</td><td>Activo</td><td>
+                                <div class="row d-flex">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                    </div>
+                                    <div class="col-lg-7 col-sm-7">
+                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ryzen 5 3400g</td><td>12</td><td>RX580 8Gb</td><td>512GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 600W</td><td>Preventivo</td><td>
+                                <div class="row d-flex">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                    </div>
+                                    <div class="col-lg-7 col-sm-7">
+                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Core i5 9G</td><td>8</td><td>GTX 1060 6GB</td><td>256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 600W</td><td>Preventivo</td><td>
+                                <div class="row d-flex">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                    </div>
+                                    <div class="col-lg-7 col-sm-7">
+                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ryzen 5 3600</td><td>8</td><td>RX580 4Gb</td><td>1TB HDD / 256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 500W</td><td>Activo</td><td>
+                                <div class="row d-flex">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                    </div>
+                                    <div class="col-lg-7 col-sm-7">
+                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Ryzen 5 2400g</td><td>16</td><td>GTX 1650 4GB</td><td>1TB HDD</td><td>Samsung 22"</td><td>B350M</td><td>CM 500W</td><td>Correctivo</td><td>
+                                <div class="row d-flex">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                    </div>
+                                    <div class="col-lg-7 col-sm-7">
+                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../popper/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Sweet Alert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <!-- datatables JS -->
+    <script
+      type="text/javascript"
+      src="../datatables/datatables.min.js"
+    ></script>
+
+    <!-- para usar botones en datatables JS -->
+    <script src="../datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="../datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="../datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="../datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="../datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+    
+    <!-- código JS propìo-->
+    <script type="text/javascript" src="../js/datatables.js"></script>
+    <script src="js/agregar-equipo.js"></script>
+    <!-- Abrir / cerrar menu -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#content-wrapper").toggleClass("toggled");
+    });
+  </script>
+  </body>
+</html>

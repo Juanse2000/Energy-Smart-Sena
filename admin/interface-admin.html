@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/interface-admin.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Ionic Icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d3a62d8a35.js" crossorigin="anonymous"></script>
+    
+    <!-- Scrooll -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="d-flex" id="content-wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="bg-light border-right">
+          <div class="logo">
+            <img src="../img/logo.png" class="logo">
+          </div>
+          <hr class="hr-line">
+          <div class="menu list-group-flush">
+            <a href="interface-admin.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-chart-bar lead mr-2"></i>Panel Principal</a>
+            <a href="reservas-hoy.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-calendar-check lead mr-2"></i>Reservas Hoy</a>
+            <a href="reservas-todas.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-calendar-alt lead mr-2"></i>Todas las reservas</a>
+            <a href="equipos-activos.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-desktop lead mr-2"></i>Equipos Activos</a>
+            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-wrench lead mr-2"></i>Mantenimiento Preventivo</a>
+            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a>
+            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
+            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-user-astronaut lead mr-2"></i>Usuarios</a>
+            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-hands-helping lead mr-2"></i>Ayuda</a>
+          </div>
+        </div>
+        <!-- Fin sidebar -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="w-100 bg-light-blue">
+    
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <button class="btn btn-primary text-dark font-weight-bold" id="menu-toggle">Mostrar / Esconder Menu</button>
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../img/testimonials-2.jpg" class="img-fluid rounded-circle avatar mr-2">
+                      Sebastian Martinez
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="perfil-admin.html">Mi perfil</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../index.html">Cerrar sesión</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Page Content -->
+        <div id="content" class="bg-grey w-100">
+
+          <section class="bg-light-blue py-3">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-9 col-md-8">
+                        <h1 class="font-weight-bold mb-0 text-dark">Bienvenido Sebastian</h1>
+                        <p class="lead text-dark">Revisa la última información</p>
+                      </div>
+                      <div class="col-lg-3 col-md-4 d-flex">
+                        <button class="btn btn-primary w-100 align-self-center text-dark font-weight-bold">Descargar reporte</button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <section class="bg-mix py-3">
+            <div class="container">
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6 d-flex stat my-3">
+                            <div class="mx-auto">
+                                <h6 class=" text-dark text-center">Ganancias Mensuales</h6>
+                                <h3 class="font-weight-bold text-dark text-center">$1.128.000 COP</h3>
+                                <h6 class="text-success text-center"><i class="icon ion-md-arrow-dropup-circle"></i> 52.60%</h6>
+                            </div>
+                          </div>
+                            <div class="col-lg-3 col-md-6 d-flex stat my-3">
+                                <div class="mx-auto">
+                                    <h6 class="text-dark text-center ">Reservas mensuales</h6>
+                                    <h3 class="font-weight-bold text-dark text-center">564</h3>
+                                    <h6 class="text-success text-center"><i class="icon ion-md-arrow-dropup-circle"></i> 52.60%</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 d-flex stat my-3">
+                                <div class="mx-auto">
+                                    <h6 class="text-dark text-center">Equipos Activos</h6>
+                                    <h3 class="font-weight-bold text-dark text-center">5</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-6 d-flex my-3">
+                                <div class="mx-auto">
+                                    <h6 class=" text-dark text-center">Usuarios Nuevos</h6>
+                                    <h3 class="font-weight-bold text-dark text-center">12</h3>
+                                    <h6 class="text-success text-center"><i class="icon ion-md-arrow-dropup-circle"></i> 15.50%</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <section>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 my-3 ">
+                          <div class="card rounded-1">
+                              <div class="card-header bg-light">
+                                <h6 class="font-weight-bold mb-0">Graficas Estadisticas</h6>
+                              </div>
+                              <div class="card-body col-lg-12 col-sm-12">
+                                <canvas id="myChart"></canvas>
+                              </div>
+                              <div class="card-body col-lg-12 col-sm-12 mb-5">
+                                <canvas id="myChart2"></canvas>
+                              </div>
+                              <div class="">
+                              <div class="card-body col-lg-12 col-sm-12 mb-5 ">
+                                <canvas id="myChart3"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 my-3">
+                        <div class="card rounded-0">
+                            <div class="card-header bg-light">
+                                <h6 class="font-weight-bold mb-0">Reservas Pendientes</h6>
+                            </div>
+                            <div class="card-body pt-2">
+                                <div class="d-flex border-bottom py-2">
+                                    <div class="d-flex mr-3">
+                                      <h2 class="align-self-center mb-0"><i class="icon ion-md-pricetag"></i></h2>
+                                    </div>
+                                    <div class="align-self-center">
+                                      <h6 class="d-inline-block mb-2 pl-5 text-dark ">Felipe Gomez</h6><span class="badge badge-success ml-2">Jueves 20 de Agosto | 15:00 </span>
+                                      <small class="d-block text-dark font-weight-bold pl-5 mt-2 ">Equipo Zeus Gamer</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex border-bottom py-2">
+                                    <div class="d-flex mr-3">
+                                      <h2 class="align-self-center mb-0"><i class="icon ion-md-pricetag"></i></h2>
+                                    </div>
+                                    <div class="align-self-center">
+                                      <h6 class="d-inline-block mb-2 pl-5 text-dark ">Alejandra Romero</h6><span class="badge badge-success ml-2">Jueves 20 de Agosto | 14:00 </span>
+                                      <small class="d-block text-dark font-weight-bold pl-5 mt-2 ">Equipo Poseidon Gamer</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex border-bottom py-2">
+                                    <div class="d-flex mr-3">
+                                      <h2 class="align-self-center mb-0"><i class="icon ion-md-pricetag"></i></h2>
+                                    </div>
+                                    <div class="align-self-center">
+                                      <h6 class="d-inline-block mb-2 pl-5 text-dark ">Sebastian Garcia</h6><span class="badge badge-success ml-2">Jueves 20 de Agosto | 14:00 </span>
+                                      <small class="d-block text-dark font-weight-bold pl-5 mt-2 ">Equipo Kratos Gamer</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex border-bottom py-2">
+                                    <div class="d-flex mr-3">
+                                      <h2 class="align-self-center mb-0"><i class="icon ion-md-pricetag"></i></h2>
+                                    </div>
+                                    <div class="align-self-center">
+                                      <h6 class="d-inline-block mb-2 pl-5 text-dark ">Mariana Reyes</h6><span class="badge badge-success ml-2">Jueves 20 de Agosto | 11:00 </span>
+                                      <small class="d-block text-dark font-weight-bold pl-5 mt-2 ">Equipo Zeus Gamer</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex border-bottom py-2 mb-3">
+                                    <div class="d-flex mr-3">
+                                      <h2 class="align-self-center mb-0"><i class="icon ion-md-pricetag"></i></h2>
+                                    </div>
+                                    <div class="align-self-center">
+                                      <h6 class="d-inline-block mb-2 pl-5 text-dark ">Bruno Mars</h6><span class="badge badge-success ml-2">Jueves 20 de Agosto | 11:00 </span>
+                                      <small class="d-block text-dark font-weight-bold pl-5 mt-2 ">Equipo Aquiles Gamer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+    </div>      
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Script para validar formulario -->
+    <script src="js/js-index.js"></script>
+
+    <!-- Sweet Alert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <!-- Abrir / cerrar menu -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#content-wrapper").toggleClass("toggled");
+    });
+  </script>
+
+    <!-- Script Para mostrar las tablas en Chart.js -->
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <script>
+      var ctx = document.getElementById('myChart2').getContext('2d');
+      var myChart = new Chart(ctx, { 
+          type: 'bar',
+          data: {
+              labels: ['Feb 2020', 'Mar 2020', 'Abr 2020', 'May 2020', 'Jun 2020', 'Jul 2020'],
+              datasets: [{
+                  label: 'Reservas Mensuales',
+                  data: [122, 278, 330, 405, 296, 564],
+                  backgroundColor: [
+                      '#0000FF',  
+                      '#0000FF',
+                      '#0000FF',
+                      '#0000CD',
+                      '#0000CD',
+                      '#00008B'
+                  ],
+                  maxBarThickness: 30,
+                  maxBarLength: 2
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true
+                      }
+                  }]
+              }
+          }
+      });
+      var ctx2 = document.getElementById('myChart').getContext('2d');
+      var myChart2 = new Chart(ctx2, { 
+          type: 'bar',
+          data: {
+              labels: ['Feb 2020', 'Mar 2020', 'Abr 2020', 'May 2020', 'Jun 2020', 'Jul 2020'],
+              datasets: [{
+                  label: 'Ganancias Mensuales por Reservas en COP $',
+                  data: [128000, 574000, 660000, 810000, 593328, 1280000],
+                  backgroundColor: [
+                      '#FFA500',  
+                      '#FFA500',
+                      '#FFA500',
+                      '#FF8C00',
+                      '#FF8C00',
+                      '#FF4500'
+                  ],
+                  maxBarThickness: 30,
+                  maxBarLength: 2
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true
+                      }
+                  }]
+              }
+          }
+      });
+      var ctx3 = document.getElementById('myChart3').getContext('2d');
+      var myChart3 = new Chart(ctx3, { 
+          type: 'bar',
+          data: {
+              labels: ['Feb 2020', 'Mar 2020', 'Abr 2020', 'May 2020', 'Jun 2020', 'Jul 2020'],
+              datasets: [{
+                  label: 'Nuevos usuarios mensuales',
+                  data: [8, 15, 12, 25, 10, 12 ],
+                  backgroundColor: [
+                      '#8B008B',  
+                      '#8B008B',
+                      '#8B008B',
+                      '#8B008B',
+                      '#800080',
+                      '#800080'
+                  ],
+                  maxBarThickness: 30,
+                  maxBarLength: 2
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true
+                      }
+                  }]
+              }
+          }
+      });
+      </script>
+  </body>
+</html>

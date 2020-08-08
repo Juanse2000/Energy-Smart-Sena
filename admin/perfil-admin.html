@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <!--datables CSS básico-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../datatables/datatables.min.css"
+    />
+    <!--datables estilo bootstrap 4 CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/interface-admin.css" />
+    <link rel="stylesheet" href="../css/perfil.css" />
+
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionic Icons -->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d3a62d8a35.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="d-flex" id="content-wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="bg-light border-right">
+          <div class="logo">
+            <img src="../img/logo.png" class="logo" />
+          </div>
+          <hr class="hr-line" />
+          <div class="menu list-group-flush">
+            <a
+              href="interface-admin.html"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-chart-bar lead mr-2"></i>Panel Principal</a
+            >
+            <a
+              href="reservas-hoy.html"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Hoy</a
+            >
+            <a
+              href="reservas-todas.html"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-calendar-alt lead mr-2"></i>Todas las reservas</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-desktop lead mr-2"></i>Equipos Activos</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-wrench lead mr-2"></i>Mantenimiento Preventivo</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a
+            >
+            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-user-astronaut lead mr-2"></i>Usuarios</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
+              ><i class="fas fa-hands-helping lead mr-2"></i>Ayuda</a
+            >
+          </div>
+        </div>
+        <!-- Fin sidebar -->
+  
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="w-100 bg-light-blue">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <button
+                class="btn btn-primary text-dark font-weight-bold"
+                id="menu-toggle"
+              >
+                Mostrar / Esconder Menu
+              </button>
+  
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link text-light dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      ><img
+                        src="../img/testimonials-2.jpg"
+                        class="img-fluid rounded-circle avatar mr-2"
+                      />
+                      Sebastian Martinez
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-menu-right"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a class="dropdown-item" href="perfil-admin.html">Mi perfil</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../index.html"
+                        >Cerrar sesión</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Page Content -->
+          <div id="content" class="bg-grey w-100">
+            <section class="bg-light-blue py-3">
+                <div class="container emp-profile">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-img">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                                    <div class="file btn btn-lg btn-dark">
+                                        Change Photo
+                                        <input type="file" name="file"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile-head">
+                                            <h5>
+                                                Kshiti Ghelani
+                                            </h5>
+                                            <h6>
+                                                Web Developer and Designer
+                                            </h6>
+                                            <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-work">
+                                    <p>WORK LINK</p>
+                                    <a href="">Website Link</a><br/>
+                                    <a href="">Bootsnipp Profile</a><br/>
+                                    <a href="">Bootply Profile</a>
+                                    <p>SKILLS</p>
+                                    <a href="">Web Designer</a><br/>
+                                    <a href="">Web Developer</a><br/>
+                                    <a href="">WordPress</a><br/>
+                                    <a href="">WooCommerce</a><br/>
+                                    <a href="">PHP, .Net</a><br/>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="tab-content profile-tab" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>User Id</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Kshiti123</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Name</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Kshiti Ghelani</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Email</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>kshitighelani@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Phone</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>123 456 7890</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Profession</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Web Developer and Designer</p>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Experience</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Expert</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Hourly Rate</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>10$/hr</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Total Projects</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>230</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>English Level</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Expert</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Availability</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>6 months</p>
+                                                    </div>
+                                                </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>Your Bio</label><br/>
+                                                <p>Your detail description</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>           
+                </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../popper/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Sweet Alert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <!-- datatables JS -->
+    <script
+      type="text/javascript"
+      src="../datatables/datatables.min.js"
+    ></script>
+
+    <!-- para usar botones en datatables JS -->
+    <script src="../datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="../datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="../datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="../datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="../datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+    
+    <!-- código JS propìo-->
+    <script type="text/javascript" src="../js/datatables.js"></script>
+
+    <!-- Abrir / cerrar menu -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#content-wrapper").toggleClass("toggled");
+    });
+  </script>
+  </body>
+</html>
