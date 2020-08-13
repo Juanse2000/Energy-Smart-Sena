@@ -172,7 +172,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="profile-img">
-                                    <img src="../img/testimonials-2.jpg" class="img-fluid rounded-circle" style="width: 150px;"/>
+                                    <img src="../img/perfil-cliente.jpg" class="img-fluid rounded-circle"/>
                                     <div class="file btn btn-lg btn-dark">
                                         Change Photo
                                         <input type="file" name="file"/>
@@ -182,139 +182,14 @@
                             <div class="col-md-6">
                                 <div class="profile-head">
                                             <h5>
-                                                Sebastian Martinez
-                                            </h5>                                            
+                                                Felipe Gomez
+                                            </h5>
+                                            <h3 class="proile-rating">No. Reservas : <span>8</span></h3>
                                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
-                                Editar perfil
-                              </button>
-                              <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-warning" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Perfil</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form class="form-container">
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-laptop-code text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="procesador"
-                                        placeholder="Codigo del equipo "
-                                        list="Procesador"
-                                      />
-                                      <datalist id="Procesador">
-                                        <option id="c1" value="112345"></option>
-                                        <option id="c2" value="113245"></option>
-                                        <option id="c3" value="114236"></option>
-                                        <option id="c4" value="115896"></option>
-                                        <option id="c5" value="116974"></option>
-                                        <option id="c6" value="117842"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                  <div class="col-12 col-md-12">
-                                    <label for="fecha-ingreso-preventivo">Fecha de ingreso</label>
-                                  </div>
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-sign-in-alt text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="date"
-                                        class="form-control shadow"
-                                        id="fecha-ingreso-preventivo"
-                                        placeholder="Fecha de ingreso"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="form-row mb-3">
-                                    <div class="col-12 col-md-12">
-                                      <label for="fecha-salida-preventivo">Fecha de salida</label>
-                                    </div>
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-sign-out-alt text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="date"
-                                        class="form-control shadow"
-                                        id="fecha-salida-preventivo"
-                                        placeholder="Fecha de salida"
-                                      />
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-user-tie text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="tipo-almacenamiento"
-                                        placeholder="Administrador que realizara el mantenimiento"
-                                        list="admin-preventivo"
-                                      />
-                                      <datalist id="admin-preventivo">
-                                        <option id="admin1" value="Sebastian Martinez"></option>
-                                        <option id="admin2" value="Cristian Avila"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-hammer text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="pantalla"
-                                        placeholder="Tipo de Mantenimiento"
-                                        list="tipo-preventivo"
-                                        />
-                                      <datalist id="tipo-preventivo">
-                                        <option id="tp1" value="Instalacion de programas"></option>
-                                        <option id="tp2" value="Eliminacion de basura/cookies/trash"></option>
-                                        <option id="tp3" value="Limpieza de hardware"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-eye text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <textarea placeholder="Escriba las observaciones del mantenimiento de ser necesario" id="texto-preventivo" cols="30" rows="10" class="form-control shadow"></textarea>
-                                    </div>
-                                  </div>
-                              </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                             </div>
                         </div>
                         <div class="row">
@@ -322,7 +197,14 @@
                                 <div class="profile-work">
                                     <p>Descripcion</p>
                                     <p>
-                                      Dueño de Energy eSports Center, estudiante de ingeniera de Software de la universidad Uninpahu.
+                                        Gamer profesional de LOL, he competido en mas de 30 torneos a nivel nacional, <br/>
+                                        tambien he participado en 2 torneos internacionales, hago parte del team <br/>
+                                        Parallel Sports, soy una persona que siempre tiene ganas de ganar, intento <br/>
+                                        dar siempre lo mejor de mi.
+                                        <br/>
+                                        <br/>
+                                        Adoro juegos como Call of Dutty, Halo y Gears of war, soy amante de los <br/>
+                                        shooters.
                                     </p>
                                 </div>
                             </div>
@@ -334,7 +216,7 @@
                                                         <label>User Id</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>1</p>
+                                                        <p>20</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -342,7 +224,7 @@
                                                         <label>Nombres</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>Sebastian Martinez/p>
+                                                        <p>Felipe Gomez</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -350,7 +232,7 @@
                                                         <label>Email</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>sebacho2906@gmail.com</p>
+                                                        <p>cliente20@gmail.com</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -358,7 +240,7 @@
                                                         <label>Telefono</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>310 7895236</p>
+                                                        <p>310 3588745</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -366,10 +248,11 @@
                                                         <label>Rol</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>Administrador</p>
+                                                        <p>Cliente</p>
                                                     </div>
                                                 </div>
-                                              </div>
+                                    </div>
+                                    
                                     </div>
                                 </div>
                             </div>

@@ -86,11 +86,11 @@
             ><i class="fas fa-wrench lead mr-2"></i>Mantenimiento Preventivo</a
           >
           <a
-            href="#"
+            href="equipos-correctivo.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a
           >
-          <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
+          <a href="todos-mantenimientos.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
           <a
             href="#"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
@@ -166,9 +166,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-9 col-md-8">
-                  <h1 class="font-weight-bold mb-0 text-dark">Equipos Activos</h1>
+                  <h1 class="font-weight-bold mb-0 text-dark">Equipos en Mantenimiento Correctivo</h1>
                   <p class="lead text-dark">
-                    En esta ventana podra ver los equipos disponibes, tambien agregar, borrar o editar un equipo.
+                    Aca encontrara los equipos que estan en Mantenimiento Correctivo podra ver que tipo de mantenimiento Correctivo tienen y sus caracteristicas, tambien podra agregar, quitar o editar un nuevo mantenimiento.
                   </p>
                 </div>
                 <div class="col-lg-3 col-md-4">
@@ -181,13 +181,13 @@
                     <div class="modal-dialog modal-warning" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title text-dark" id="exampleModalLabel">Agregar Nuevo Equipo</h5>
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Agregar Nuevo Equipo a Mantenimiento Correctivo</h5>
                         </div>
                         <div class="modal-body">
                             <form class="form-container">
                                 <div class="form-row mb-3">
                                     <div class="col-1 col-md-1 my-1">
-                                        <i class="fas fa-microchip text text-dark"></i>
+                                      <i class="fas fa-laptop-code text-dark"></i>
                                     </div>
                                     <div class="col-11 col-md-11 my-11">
                                       <input
@@ -195,59 +195,54 @@
                                         class="form-control shadow"
                                         name="option-rol"
                                         id="procesador"
-                                        placeholder="Procesador"
+                                        placeholder="Codigo del equipo "
                                         list="Procesador"
                                       />
                                       <datalist id="Procesador">
-                                        <option id="p1" value="Ryzen 5 3600"></option>
-                                        <option id="p2" value="Core i5 9600k"></option>
-                                        <option id="p3" value="Ryzen 5 2400g"></option>
+                                        <option id="c1" value="112345"></option>
+                                        <option id="c2" value="113245"></option>
+                                        <option id="c3" value="114236"></option>
+                                        <option id="c4" value="115896"></option>
+                                        <option id="c5" value="116974"></option>
+                                        <option id="c6" value="117842"></option>
                                       </datalist>
                                     </div>
                                   </div>
                                 <div class="form-row mb-3">
+                                  <div class="col-12 col-md-12">
+                                    <label for="fecha-ingreso-preventivo">Fecha de ingreso</label>
+                                  </div>
                                     <div class="col-1 col-md-1 my-1">
-                                        <i class="fas fa-memory text-dark"></i>
+                                      <i class="fas fa-sign-in-alt text-dark"></i>
                                     </div>
                                     <div class="col-11 col-md-11 my-11">
                                       <input
-                                        type="text"
+                                        type="date"
                                         class="form-control shadow"
-                                        name="option-rol"
-                                        id="ram"
-                                        placeholder="Memoria Ram"
-                                        list="Ram"
+                                        id="fecha-ingreso-preventivo"
+                                        placeholder="Fecha de ingreso"
                                       />
-                                      <datalist id="Ram">
-                                        <option id="r1" value="4GB"></option>
-                                        <option id="r2" value="8GB"></option>
-                                        <option id="r2" value="16GB"></option>
-                                      </datalist>
                                     </div>
                                   </div>
-                                <div class="form-row mb-3">
+                                  <div class="form-row mb-3">
+                                    <div class="col-12 col-md-12">
+                                      <label for="fecha-salida-preventivo">Fecha de salida</label>
+                                    </div>
                                     <div class="col-1 col-md-1 my-1">
-                                        <i class="fas fa-digital-tachograph text-dark"></i>
+                                      <i class="fas fa-sign-out-alt text-dark"></i>
                                     </div>
                                     <div class="col-11 col-md-11 my-11">
                                       <input
-                                        type="text"
+                                        type="date"
                                         class="form-control shadow"
-                                        name="option-rol"
-                                        id="tarjeta-grafica"
-                                        placeholder="Tarjeta Grafica"
-                                        list="tarjeta-grafica"
+                                        id="fecha-salida-preventivo"
+                                        placeholder="Fecha de salida"
                                       />
-                                      <datalist id="tarjeta-grafica">
-                                        <option id="tg1" value="RX580 4Gb"></option>
-                                        <option id="tg2" value="GTX 1650 4GB"></option>
-                                        <option id="tg2" value="GTX 1060 6GB"></option>
-                                      </datalist>
                                     </div>
                                   </div>
                                 <div class="form-row mb-3">
                                     <div class="col-1 col-md-1 my-1">
-                                        <i class="fas fa-hdd text-dark"></i>
+                                      <i class="fas fa-user-tie text-dark"></i>
                                     </div>
                                     <div class="col-11 col-md-11 my-11">
                                       <input
@@ -255,19 +250,18 @@
                                         class="form-control shadow"
                                         name="option-rol"
                                         id="tipo-almacenamiento"
-                                        placeholder="Cantidad y tipo de Almacenamiento"
-                                        list="tipo-almacenamiento"
+                                        placeholder="Nombre del tecnico que realizara el mantenimiento"
+                                        list="admin-preventivo"
                                       />
-                                      <datalist id="tipo-almacenamiento">
-                                        <option id="HDD1" value="Disco Duro 1TB"></option>
-                                        <option id="SSD" value="Disco Solido 512GB"></option>
-                                        <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                      <datalist id="admin-preventivo">
+                                        <option id="admin1" value="Carlos Mendoza"></option>
+                                        <option id="admin2" value="Harold Murcia"></option>
                                       </datalist>
                                     </div>
                                   </div>
                                 <div class="form-row mb-3">
                                     <div class="col-1 col-md-1 my-1">
-                                        <i class="fas fa-desktop text-dark"></i>
+                                      <i class="fas fa-hammer text-dark"></i>
                                     </div>
                                     <div class="col-11 col-md-11 my-11">
                                       <input
@@ -275,54 +269,22 @@
                                         class="form-control shadow"
                                         name="option-rol"
                                         id="pantalla"
-                                        placeholder="Pantalla"
-                                        list="pantalla"
+                                        placeholder="Tipo de Mantenimiento"
+                                        list="tipo-preventivo"
                                         />
-                                      <datalist id="pantalla">
-                                        <option id="pant1" value="22 Pulgadas"></option>
-                                        <option id="pant2" value="27 Pulgadas"></option>
-                                        <option id="pant3" value="20 Pulgadas"></option>
+                                      <datalist id="tipo-preventivo">
+                                        <option id="tp1" value="Daño de hardware"></option>
+                                        <option id="tp2" value="Virus/Malware"></option>
+                                        <option id="tp3" value="Daño Software"></option>
                                       </datalist>
                                     </div>
                                   </div>
                                 <div class="form-row mb-3">
                                     <div class="col-1 col-md-1 my-1">
-                                        <i class="fas fa-charging-station text-dark "></i>
+                                      <i class="fas fa-eye text-dark"></i>
                                     </div>
                                     <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="fuente"
-                                        placeholder="Fuente"
-                                        list="fuente"
-                                      />
-                                      <datalist id="fuente">
-                                        <option id="f1" value="Fuente 600W reales"></option>
-                                        <option id="f2" value="Fuente 450W genericos"></option>
-                                        <option id="f3" value="Fuente 300W genericos"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                        <i class="fas fa-border-all text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="board"
-                                        placeholder="Board"
-                                        list="board"
-                                      />
-                                      <datalist id="board">
-                                        <option id="b1" value="B450M"></option>
-                                        <option id="b2" value="B350M"></option>
-                                        <option id="b2" value="B650M"></option>
-                                      </datalist>
+                                      <textarea placeholder="Escriba las observaciones del mantenimiento Ej: Daño en la tarjeta grafica por altas temperaturas, compra de nueva tarjeta grafica con garantia de 3 meses, etc." id="texto-preventivo" cols="30" rows="10" class="form-control shadow"></textarea>
                                     </div>
                                   </div>
                               </form>
@@ -350,90 +312,25 @@
                       cellspacing="0"
                       width="100%"
                     >
-                    <thead>
-                        <th>IdEquipo</th>
-                        <th>Procesador</th><th>Ram</th><th>Tarjeta Grafica</th><th>Almacenamiento</th><th>Pantalla</th><th>Board</th><th>Fuente</th><th>Estado</th><th>Acciones</th>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td >Ryzen 5 3600</td><td>8</td><td>RX580 4Gb</td><td>1TB HDD / 256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 500W</td><td>Activo</td>
-                            <td>
-                                <div class="row d-flex">
-                                <div class="col-lg-4 col-sm-4">
-                                    <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
-                                </div>
-                                <div class="col-lg-7 col-sm-7">
-                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                                </div>
-                            </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Ryzen 5 2400g</td><td>16</td><td>GTX 1650 4GB</td><td>1TB HDD</td><td>Samsung 22"</td><td>B350M</td><td>CM 500W</td><td>Activo</td><td>
-                                <div class="row d-flex">
-                                    <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
-                                    </div>
-                                    <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Ryzen 5 3400g</td><td>12</td><td>RX580 8Gb</td><td>512GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 600W</td><td>Preventivo</td><td>
-                                <div class="row d-flex">
-                                    <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
-                                    </div>
-                                    <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Core i5 9G</td><td>8</td><td>GTX 1060 6GB</td><td>256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 600W</td><td>Preventivo</td><td>
-                                <div class="row d-flex">
-                                    <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
-                                    </div>
-                                    <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Ryzen 5 3600</td><td>8</td><td>RX580 4Gb</td><td>1TB HDD / 256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 500W</td><td>Activo</td><td>
-                                <div class="row d-flex">
-                                    <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
-                                    </div>
-                                    <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Ryzen 5 2400g</td><td>16</td><td>GTX 1650 4GB</td><td>1TB HDD</td><td>Samsung 22"</td><td>B350M</td><td>CM 500W</td><td>Correctivo</td><td>
-                                <div class="row d-flex">
-                                    <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
-                                    </div>
-                                    <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
+                        <thead>
+                            <th>IdEquipo</th>
+                            <th>Fecha de Ingreso</th><th>Fecha de Salida</th><th>Administrador<th>Tipo de Mantenimiento<th>Observaciones</th><th>Acciones</th>
+                        <tbody>
+                            <tr>
+                                <td>6</td>
+                                <td>13/08/2020</td><td>15/08/2020</td><td>Carlos Mendoza</td><td>Daño de hardware<td>Daño en la pantalla, se rompio, se va a mandar a arreglar el display</td>
+                                <td>
+                                  <div class="row d-flex">
+                                      <div class="col-lg-4 col-sm-4">
+                                          <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      </div>
+                                      <div class="col-lg-7 col-sm-7">
+                                          <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                      </div>
+                                  </div>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                   </div>
                 </div>
