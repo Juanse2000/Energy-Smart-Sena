@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Ionic Icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d3a62d8a35.js" crossorigin="anonymous"></script>
+    
+    <!-- Scrooll -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>Main</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#servicios">Reservaciones</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#nosotros">Perfil</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link font-weight-bold text-light" href="html/login.html">Salir</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="bg-dark py-5">
+        <div class="container mt-3 mb-5">
+            <div class="row d-flex">
+                <div class="col-lg-6 align-self-center">
+                    <h1 class="mb-4">Somos expertos en el <span class="font-weight-bold text-primary">Entretenimiento Gamer.</span></h1>
+                    <p class="lead text-muted mb-4">Podras vivir la mejor experiencia Gamer que puedas encontrar. Una mezcla de computadores de alto rendimieno, Xbox One y Play 4 para que vivas los videojuegos de una manera unica. </p>
+                    <div class="mb-5">
+                    <a href="html/registro.html" class="btn btn-primary mr-2 mb-3 shadow">Reserva tu PC</a>
+                    </div>
+                    <ul class="list-inline"><ion-icon name="logo-xbox"></ion-icon>
+                        <li class="list-inline-item mr-4"><i class="fab fa-xbox lead text-primary mr-2"></i> Xbox</li>
+                        <li class="list-inline-item mr-4"><i class="fab fa-playstation lead text-primary mr-2"></i> Play Station</li>
+                        <li class="list-inline-item"><i class="fas fa-desktop lead text-primary mr-2"></i> PC Gamer</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/logoListo.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="bg-dark-x py-5 border-top">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <p class="mb-0">Creado por Sebastian Garcia <br><small>Derechos reservados 2020</small></p>
+          </div>
+          <div class="col-lg-6 text-right">
+              <ul class="list-inline mb-0">
+                  <li class="list-inline-item mr-3"><small>Síguenos en:</small></li>
+                  <li class="list-inline-item mr-3"><a target="_blank" href="https://www.instagram.com/energy.esport/"><i class="icon ion-logo-instagram lead text-primary"></i></a></li>
+                  <li class="list-inline-item mr-3"><a target="_blank" href=""><i class="icon ion-logo-linkedin lead text-primary"></i></a></li>
+                  <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/energy.esportscenter/"><i class="icon ion-logo-facebook lead text-primary"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Script para validar formulario -->
+    <script src="js/js-index.js"></script>
+    <!-- Sweet Alert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+      });
+    });
+    </script>
+  </body>
+</html>
