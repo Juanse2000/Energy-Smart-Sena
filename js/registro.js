@@ -98,7 +98,7 @@ function validarEspacios(e){
             Swal.fire({
                 title: "Registrado correctamente",
                 text: 'Se ha registrado como administrador',
-                timer: 2000,
+                timer: 4000,
             icon: 'success',
             showConfirmButton: false,
             });
@@ -107,7 +107,7 @@ function validarEspacios(e){
             Swal.fire({
                 title: "Registrado correctamente",
                 text: 'Se ha registrado como cliente',
-                timer: 2000,
+                timer: 4000,
             icon: 'success',
             showConfirmButton: false,
             });

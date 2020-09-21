@@ -10,7 +10,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo"></a>
+        <a class="navbar-brand" href="interfaz-cliente.html"><img src="../img/logo.png" class="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mr-3">
-              <a class="nav-link" href="#servicios">Reservaciones</a>
+              <a class="nav-link font-weight-bold text-light" href="reservas-cliente.html">Reservaciones</a>
             </li>
             <li class="nav-item mr-3">
-              <a class="nav-link" href="#nosotros">Perfil</a>
+              <a class="nav-link font-weight-bold text-light" href="perfil-cliente.html">Perfil</a>
             </li>
             <li class="nav-item mr-3">
-                <a class="nav-link font-weight-bold text-light" href="html/login.html">Salir</a>
+                <a class="nav-link font-weight-bold text-light" href="../index.html">Salir</a>
               </li>
           </ul>
         </div>
@@ -54,7 +54,92 @@
                     <h1 class="mb-4">Somos expertos en el <span class="font-weight-bold text-primary">Entretenimiento Gamer.</span></h1>
                     <p class="lead text-muted mb-4">Podras vivir la mejor experiencia Gamer que puedas encontrar. Una mezcla de computadores de alto rendimieno, Xbox One y Play 4 para que vivas los videojuegos de una manera unica. </p>
                     <div class="mb-5">
-                    <a href="html/registro.html" class="btn btn-primary mr-2 mb-3 shadow">Reserva tu PC</a>
+                      <button type="button" class="btn btn-primary col-lg-12 col-sm-12 style="width: 450px;" data-toggle="modal" data-target="#form-reserva">
+                        Reserva Tu PC
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="form-reserva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-warning" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark font-weight-bold" id="exampleModalLabel">Hacer Reserva</h5>
+                            </div>
+                            <div class="modal-body">
+                              <form class="form-container">
+                                  <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                        <i class="fas fa-desktop text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="id-nombre-pc"
+                                        placeholder="Equipo que va a Reservar"
+                                        list="nombre-pc"
+                                      />
+                                      <datalist id="nombre-pc">
+                                        <option id="e1" value="Zeus Pro Gaming"></option>
+                                        <option id="e2" value="Hercules Pro Gaming"></option>
+                                        <option id="e3" value="Ares Pro Gaming"></option>
+                                        <option id="e4" value="Kratos Pro Gaming"></option>
+                                        <option id="e5" value="Poseidon Pro Gaming"></option>
+                                        <option id="e6" value="Aquiles Pro Gaming"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>
+                                  <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                      <i class="far fa-calendar-alt text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="date"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="id-fecha-reserva"
+                                        placeholder="Fecha"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="form-row mb-3">
+                                    <div class="col-1 col-md-1 my-1">
+                                      <i class="fas fa-clock text-dark"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11 my-11">
+                                      <input
+                                        type="text"
+                                        class="form-control shadow"
+                                        name="option-rol"
+                                        id="id-hora-reserva"
+                                        placeholder="Hora de la Reserva"
+                                        list="hora-reserva"
+                                      />
+                                      <datalist id="hora-reserva">
+                                        <option id="t1" value="10:00"></option>
+                                        <option id="t2" value="11:00"></option>
+                                        <option id="t3" value="12:00"></option>
+                                        <option id="t4" value="13:00"></option>
+                                        <option id="t5" value="14:00"></option>
+                                        <option id="t6" value="15:00"></option>
+                                        <option id="t7" value="16:00"></option>
+                                        <option id="t8" value="17:00"></option>
+                                        <option id="t9" value="18:00"></option>
+                                      </datalist>
+                                    </div>
+                                  </div>                              
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-info" id="boton-agregar-equipo">Reservar</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                    <!-- Seccion principal de la pagina -->
                     </div>
                     <ul class="list-inline"><ion-icon name="logo-xbox"></ion-icon>
                         <li class="list-inline-item mr-4"><i class="fab fa-xbox lead text-primary mr-2"></i> Xbox</li>
@@ -62,8 +147,8 @@
                         <li class="list-inline-item"><i class="fas fa-desktop lead text-primary mr-2"></i> PC Gamer</li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
-                    <img src="img/logoListo.png" class="img-fluid">
+                <div class="col-lg-6 mb-5" >
+                    <img src="../img/logoListo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -96,17 +181,5 @@
     <script src="js/js-index.js"></script>
     <!-- Sweet Alert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-      });
-    });
-    </script>
   </body>
 </html>

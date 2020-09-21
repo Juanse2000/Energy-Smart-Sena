@@ -194,11 +194,11 @@
                                         type="text"
                                         class="form-control shadow"
                                         name="option-rol"
-                                        id="procesador"
+                                        id="codigo-equipo"
                                         placeholder="Codigo del equipo "
-                                        list="Procesador"
+                                        list="Codigo-equipo"
                                       />
-                                      <datalist id="Procesador">
+                                      <datalist id="Codigo-equipo">
                                         <option id="c1" value="112345"></option>
                                         <option id="c2" value="113245"></option>
                                         <option id="c3" value="114236"></option>
@@ -249,11 +249,11 @@
                                         type="text"
                                         class="form-control shadow"
                                         name="option-rol"
-                                        id="tipo-almacenamiento"
+                                        id="administrador-preventivo"
                                         placeholder="Administrador que realizara el mantenimiento"
-                                        list="admin-preventivo"
+                                        list="Administrador"
                                       />
-                                      <datalist id="admin-preventivo">
+                                      <datalist id="Administrador">
                                         <option id="admin1" value="Sebastian Martinez"></option>
                                         <option id="admin2" value="Cristian Avila"></option>
                                       </datalist>
@@ -268,11 +268,11 @@
                                         type="text"
                                         class="form-control shadow"
                                         name="option-rol"
-                                        id="pantalla"
+                                        id="tipo-preventivo"
                                         placeholder="Tipo de Mantenimiento"
-                                        list="tipo-preventivo"
+                                        list="Tipo-preventivo"
                                         />
-                                      <datalist id="tipo-preventivo">
+                                      <datalist id="Tipo-preventivo">
                                         <option id="tp1" value="Instalacion de programas"></option>
                                         <option id="tp2" value="Eliminacion de basura/cookies/trash"></option>
                                         <option id="tp3" value="Limpieza de hardware"></option>
@@ -290,7 +290,7 @@
                               </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
+                            <button type="button" class="btn btn-info" id="boton-agregar-equipo-preventivo">Agregar</button>
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                           
                         </div>
@@ -322,10 +322,131 @@
                             <td>
                               <div class="row d-flex">
                                   <div class="col-lg-4 col-sm-4">
-                                      <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-preventivo"><i class="fas fa-edit"></i></button> 
+                                      <!-- Modal -->
+                                    <div class="modal fade" id="modal-preventivo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-warning" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar registros de Mantenimiento Preventivo</h5>
+                                          </div>
+                                          <div class="modal-body">
+                                              <form class="form-container">
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-laptop-code text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="codigo-equipo1"
+                                                          placeholder="Codigo del equipo "
+                                                          list="Codigo-equipo"
+                                                        />
+                                                        <datalist id="Codigo-equipo">
+                                                          <option id="c1" value="112345"></option>
+                                                          <option id="c2" value="113245"></option>
+                                                          <option id="c3" value="114236"></option>
+                                                          <option id="c4" value="115896"></option>
+                                                          <option id="c5" value="116974"></option>
+                                                          <option id="c6" value="117842"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                    <div class="col-12 col-md-12">
+                                                      <label for="fecha-ingreso-preventivo">Fecha de ingreso</label>
+                                                    </div>
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-sign-in-alt text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="date"
+                                                          class="form-control shadow"
+                                                          id="fecha-ingreso-preventivo1"
+                                                          placeholder="Fecha de ingreso"
+                                                        />
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-row mb-3">
+                                                      <div class="col-12 col-md-12">
+                                                        <label for="fecha-salida-preventivo">Fecha de salida</label>
+                                                      </div>
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-sign-out-alt text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="date"
+                                                          class="form-control shadow"
+                                                          id="fecha-salida-preventivo1"
+                                                          placeholder="Fecha de salida"
+                                                        />
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-user-tie text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="administrador-preventivo1"
+                                                          placeholder="Administrador que realizara el mantenimiento"
+                                                          list="Administrador"
+                                                        />
+                                                        <datalist id="Administrador">
+                                                          <option id="admin1" value="Sebastian Martinez"></option>
+                                                          <option id="admin2" value="Cristian Avila"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-hammer text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="tipo-preventivo1"
+                                                          placeholder="Tipo de Mantenimiento"
+                                                          list="Tipo-preventivo"
+                                                          />
+                                                        <datalist id="Tipo-preventivo">
+                                                          <option id="tp1" value="Instalacion de programas"></option>
+                                                          <option id="tp2" value="Eliminacion de basura/cookies/trash"></option>
+                                                          <option id="tp3" value="Limpieza de hardware"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-eye text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <textarea placeholder="Escriba las observaciones del mantenimiento de ser necesario" id="texto-preventivo1" cols="30" rows="10" class="form-control shadow"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </form>
+                                          </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-info" id="boton-modificar-equipo-preventivo1">Agregar</button>
+                                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
                                   <div class="col-lg-7 col-sm-7">
-                                      <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                      <button class="btn btn-danger" id="boton-eliminar-equipo-preventivo1"><i class="fas fa-trash-alt"></i></button>
                                   </div>
                               </div>
                             </td>
@@ -336,10 +457,131 @@
                           <td>
                               <div class="row d-flex">
                                   <div class="col-lg-4 col-sm-4">
-                                      <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-preventivo2"><i class="fas fa-edit"></i></button> 
+                                      <!-- Modal -->
+                                    <div class="modal fade" id="modal-preventivo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-warning" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar registros de Mantenimiento Preventivo</h5>
+                                          </div>
+                                          <div class="modal-body">
+                                              <form class="form-container">
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-laptop-code text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="codigo-equipo2"
+                                                          placeholder="Codigo del equipo "
+                                                          list="Codigo-equipo"
+                                                        />
+                                                        <datalist id="Codigo-equipo">
+                                                          <option id="c1" value="112345"></option>
+                                                          <option id="c2" value="113245"></option>
+                                                          <option id="c3" value="114236"></option>
+                                                          <option id="c4" value="115896"></option>
+                                                          <option id="c5" value="116974"></option>
+                                                          <option id="c6" value="117842"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                    <div class="col-12 col-md-12">
+                                                      <label for="fecha-ingreso-preventivo">Fecha de ingreso</label>
+                                                    </div>
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-sign-in-alt text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="date"
+                                                          class="form-control shadow"
+                                                          id="fecha-ingreso-preventivo2"
+                                                          placeholder="Fecha de ingreso"
+                                                        />
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-row mb-3">
+                                                      <div class="col-12 col-md-12">
+                                                        <label for="fecha-salida-preventivo">Fecha de salida</label>
+                                                      </div>
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-sign-out-alt text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="date"
+                                                          class="form-control shadow"
+                                                          id="fecha-salida-preventivo2"
+                                                          placeholder="Fecha de salida"
+                                                        />
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-user-tie text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="administrador-preventivo2"
+                                                          placeholder="Administrador que realizara el mantenimiento"
+                                                          list="Administrador"
+                                                        />
+                                                        <datalist id="Administrador">
+                                                          <option id="admin1" value="Sebastian Martinez"></option>
+                                                          <option id="admin2" value="Cristian Avila"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-hammer text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="tipo-preventivo2"
+                                                          placeholder="Tipo de Mantenimiento"
+                                                          list="Tipo-preventivo"
+                                                          />
+                                                        <datalist id="Tipo-preventivo">
+                                                          <option id="tp1" value="Instalacion de programas"></option>
+                                                          <option id="tp2" value="Eliminacion de basura/cookies/trash"></option>
+                                                          <option id="tp3" value="Limpieza de hardware"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-eye text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <textarea placeholder="Escriba las observaciones del mantenimiento de ser necesario" id="texto-preventivo2" cols="30" rows="10" class="form-control shadow"></textarea>
+                                                      </div>
+                                                    </div>
+                                                </form>
+                                          </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-info" id="boton-modificar-equipo-preventivo2">Agregar</button>
+                                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
                                   <div class="col-lg-7 col-sm-7">
-                                      <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                      <button class="btn btn-danger" id="boton-eliminar-equipo-preventivo2"><i class="fas fa-trash-alt"></i></button>
                                   </div>
                               </div>
                             </td>
@@ -379,7 +621,7 @@
     
     <!-- código JS propìo-->
     <script type="text/javascript" src="../js/datatables.js"></script>
-    <script src="js/agregar-equipo.js"></script>
+    <script src="js/equipos-preventivo.js"></script>
     <!-- Abrir / cerrar menu -->
   <script>
     $("#menu-toggle").click(function (e) {

@@ -172,12 +172,12 @@
                   </p>
                 </div>
                 <div class="col-lg-3 col-md-4">
-                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregar-equipo-correctivo">
                     Agregar Equipo
                   </button>
                   
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="agregar-equipo-correctivo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-warning" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -194,7 +194,7 @@
                                         type="text"
                                         class="form-control shadow"
                                         name="option-rol"
-                                        id="procesador"
+                                        id="codigo-equipo-correctivo"
                                         placeholder="Codigo del equipo "
                                         list="Procesador"
                                       />
@@ -219,7 +219,7 @@
                                       <input
                                         type="date"
                                         class="form-control shadow"
-                                        id="fecha-ingreso-preventivo"
+                                        id="fecha-ingreso-correctivo"
                                         placeholder="Fecha de ingreso"
                                       />
                                     </div>
@@ -235,7 +235,7 @@
                                       <input
                                         type="date"
                                         class="form-control shadow"
-                                        id="fecha-salida-preventivo"
+                                        id="fecha-salida-correctivo"
                                         placeholder="Fecha de salida"
                                       />
                                     </div>
@@ -249,11 +249,11 @@
                                         type="text"
                                         class="form-control shadow"
                                         name="option-rol"
-                                        id="tipo-almacenamiento"
+                                        id="admin-correctivo"
                                         placeholder="Nombre del tecnico que realizara el mantenimiento"
-                                        list="admin-preventivo"
+                                        list="Admin-preventivo"
                                       />
-                                      <datalist id="admin-preventivo">
+                                      <datalist id="Admin-preventivo">
                                         <option id="admin1" value="Carlos Mendoza"></option>
                                         <option id="admin2" value="Harold Murcia"></option>
                                       </datalist>
@@ -268,11 +268,11 @@
                                         type="text"
                                         class="form-control shadow"
                                         name="option-rol"
-                                        id="pantalla"
+                                        id="tipo-correctivo"
                                         placeholder="Tipo de Mantenimiento"
-                                        list="tipo-preventivo"
+                                        list="Tipo-correctivo"
                                         />
-                                      <datalist id="tipo-preventivo">
+                                      <datalist id="Tipo-correctivo">
                                         <option id="tp1" value="Daño de hardware"></option>
                                         <option id="tp2" value="Virus/Malware"></option>
                                         <option id="tp3" value="Daño Software"></option>
@@ -284,13 +284,13 @@
                                       <i class="fas fa-eye text-dark"></i>
                                     </div>
                                     <div class="col-11 col-md-11 my-11">
-                                      <textarea placeholder="Escriba las observaciones del mantenimiento Ej: Daño en la tarjeta grafica por altas temperaturas, compra de nueva tarjeta grafica con garantia de 3 meses, etc." id="texto-preventivo" cols="30" rows="10" class="form-control shadow"></textarea>
+                                      <textarea placeholder="Escriba las observaciones del mantenimiento Ej: Daño en la tarjeta grafica por altas temperaturas, compra de nueva tarjeta grafica con garantia de 3 meses, etc." id="texto-correctivo" cols="30" rows="10" class="form-control shadow"></textarea>
                                     </div>
                                   </div>
                               </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
+                            <button type="button" class="btn btn-info" id="boton-agregar-equipo-correctivo">Agregar</button>
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                           
                         </div>
@@ -322,10 +322,131 @@
                                 <td>
                                   <div class="row d-flex">
                                       <div class="col-lg-4 col-sm-4">
-                                          <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                          <button class="btn btn-info" data-toggle="modal" data-target="#modificar-equipo-correctivo"><i class="fas fa-edit"></i></button> 
+                                          <!-- Modal -->
+                                        <div class="modal fade" id="modificar-equipo-correctivo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-warning" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title text-dark" id="exampleModalLabel">Agregar Nuevo Equipo a Mantenimiento Correctivo</h5>
+                                              </div>
+                                              <div class="modal-body">
+                                                  <form class="form-container">
+                                                      <div class="form-row mb-3">
+                                                          <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-laptop-code text-dark"></i>
+                                                          </div>
+                                                          <div class="col-11 col-md-11 my-11">
+                                                            <input
+                                                              type="text"
+                                                              class="form-control shadow"
+                                                              name="option-rol"
+                                                              id="codigo-pc-correctivo1"
+                                                              placeholder="Codigo del equipo "
+                                                              list="Codigo-equipo-correctivo1"
+                                                            />
+                                                            <datalist id="Codigo-equipo-correctivo1">
+                                                              <option id="c1" value="112345"></option>
+                                                              <option id="c2" value="113245"></option>
+                                                              <option id="c3" value="114236"></option>
+                                                              <option id="c4" value="115896"></option>
+                                                              <option id="c5" value="116974"></option>
+                                                              <option id="c6" value="117842"></option>
+                                                            </datalist>
+                                                          </div>
+                                                        </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-12 col-md-12">
+                                                          <label for="fecha-ingreso-preventivo">Fecha de ingreso</label>
+                                                        </div>
+                                                          <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-sign-in-alt text-dark"></i>
+                                                          </div>
+                                                          <div class="col-11 col-md-11 my-11">
+                                                            <input
+                                                              type="date"
+                                                              class="form-control shadow"
+                                                              id="fecha-ingreso-correctivo1"
+                                                              placeholder="Fecha de ingreso"
+                                                            />
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-row mb-3">
+                                                          <div class="col-12 col-md-12">
+                                                            <label for="fecha-salida-preventivo">Fecha de salida</label>
+                                                          </div>
+                                                          <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-sign-out-alt text-dark"></i>
+                                                          </div>
+                                                          <div class="col-11 col-md-11 my-11">
+                                                            <input
+                                                              type="date"
+                                                              class="form-control shadow"
+                                                              id="fecha-salida-correctivo1"
+                                                              placeholder="Fecha de salida"
+                                                            />
+                                                          </div>
+                                                        </div>
+                                                      <div class="form-row mb-3">
+                                                          <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-user-tie text-dark"></i>
+                                                          </div>
+                                                          <div class="col-11 col-md-11 my-11">
+                                                            <input
+                                                              type="text"
+                                                              class="form-control shadow"
+                                                              name="option-rol"
+                                                              id="administrador-correctivo1"
+                                                              placeholder="Nombre del tecnico que realizara el mantenimiento"
+                                                              list="Admin-correctivo1"
+                                                            />
+                                                            <datalist id="Admin-correctivo1">
+                                                              <option id="admin1" value="Carlos Mendoza"></option>
+                                                              <option id="admin2" value="Harold Murcia"></option>
+                                                            </datalist>
+                                                          </div>
+                                                        </div>
+                                                      <div class="form-row mb-3">
+                                                          <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-hammer text-dark"></i>
+                                                          </div>
+                                                          <div class="col-11 col-md-11 my-11">
+                                                            <input
+                                                              type="text"
+                                                              class="form-control shadow"
+                                                              name="option-rol"
+                                                              id="tipo-m-correctivo1"
+                                                              placeholder="Tipo de Mantenimiento"
+                                                              list="Tipo-correctivo1"
+                                                              />
+                                                            <datalist id="Tipo-correctivo1">
+                                                              <option id="tp1" value="Daño de hardware"></option>
+                                                              <option id="tp2" value="Virus/Malware"></option>
+                                                              <option id="tp3" value="Daño Software"></option>
+                                                            </datalist>
+                                                          </div>
+                                                        </div>
+                                                      <div class="form-row mb-3">
+                                                          <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-eye text-dark"></i>
+                                                          </div>
+                                                          <div class="col-11 col-md-11 my-11">
+                                                            <textarea placeholder="Escriba las observaciones del mantenimiento Ej: Daño en la tarjeta grafica por altas temperaturas, compra de nueva tarjeta grafica con garantia de 3 meses, etc." id="texto-correctivo1" cols="30" rows="10" class="form-control shadow"></textarea>
+                                                          </div>
+                                                        </div>
+                                                    </form>
+                                              </div>
+                                              <div class="modal-footer">
+                                                  <button type="button" class="btn btn-info" id="boton-modificar-equipo-correctivo1">Agregar</button>
+                                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                       <div class="col-lg-7 col-sm-7">
-                                          <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                          <button class="btn btn-danger" id="boton-eliminar-equipo-correctivo1"><i class="fas fa-trash-alt"></i></button>
                                       </div>
                                   </div>
                                 </td>
@@ -365,7 +486,7 @@
     
     <!-- código JS propìo-->
     <script type="text/javascript" src="../js/datatables.js"></script>
-    <script src="js/agregar-equipo.js"></script>
+    <script src="js/equipos-correctivo.js"></script>
     <!-- Abrir / cerrar menu -->
   <script>
     $("#menu-toggle").click(function (e) {

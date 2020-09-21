@@ -236,9 +236,9 @@
                                         name="option-rol"
                                         id="tarjeta-grafica"
                                         placeholder="Tarjeta Grafica"
-                                        list="tarjeta-grafica"
+                                        list="Tarjeta-grafica"
                                       />
-                                      <datalist id="tarjeta-grafica">
+                                      <datalist id="Tarjeta-grafica">
                                         <option id="tg1" value="RX580 4Gb"></option>
                                         <option id="tg2" value="GTX 1650 4GB"></option>
                                         <option id="tg2" value="GTX 1060 6GB"></option>
@@ -256,9 +256,9 @@
                                         name="option-rol"
                                         id="tipo-almacenamiento"
                                         placeholder="Cantidad y tipo de Almacenamiento"
-                                        list="tipo-almacenamiento"
+                                        list="Tipo-almacenamiento"
                                       />
-                                      <datalist id="tipo-almacenamiento">
+                                      <datalist id="Tipo-almacenamiento">
                                         <option id="HDD1" value="Disco Duro 1TB"></option>
                                         <option id="SSD" value="Disco Solido 512GB"></option>
                                         <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
@@ -276,9 +276,9 @@
                                         name="option-rol"
                                         id="pantalla"
                                         placeholder="Pantalla"
-                                        list="pantalla"
+                                        list="Pantalla"
                                         />
-                                      <datalist id="pantalla">
+                                      <datalist id="Pantalla">
                                         <option id="pant1" value="22 Pulgadas"></option>
                                         <option id="pant2" value="27 Pulgadas"></option>
                                         <option id="pant3" value="20 Pulgadas"></option>
@@ -296,9 +296,9 @@
                                         name="option-rol"
                                         id="fuente"
                                         placeholder="Fuente"
-                                        list="fuente"
+                                        list="Fuente"
                                       />
-                                      <datalist id="fuente">
+                                      <datalist id="Fuente">
                                         <option id="f1" value="Fuente 600W reales"></option>
                                         <option id="f2" value="Fuente 450W genericos"></option>
                                         <option id="f3" value="Fuente 300W genericos"></option>
@@ -316,9 +316,9 @@
                                         name="option-rol"
                                         id="board"
                                         placeholder="Board"
-                                        list="board"
+                                        list="Board"
                                       />
-                                      <datalist id="board">
+                                      <datalist id="Board">
                                         <option id="b1" value="B450M"></option>
                                         <option id="b2" value="B350M"></option>
                                         <option id="b2" value="B650M"></option>
@@ -329,8 +329,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                          
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                          
                         </div>
                       </div>
                     </div>
@@ -338,8 +337,9 @@
               </div>
             </div>
           </section>
-          <section class="bg-light-blue py-4 mb-5">
+          
             <!-- Parte principal -->
+          <section class="bg-light-blue py-4 mb-5">
             <div class="container mb-5">
               <div class="row">
                 <div class="col-lg-12">
@@ -360,12 +360,195 @@
                             <td>
                                 <div class="row d-flex">
                                 <div class="col-lg-4 col-sm-4">
-                                    <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                    <button class="btn btn-info" data-toggle="modal" data-target="#modal-edit-1" type="button">
+                                      <i class="fas fa-edit"></i>
+                                    </button> 
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal-edit-1" tabindex="-1" role="dialog" aria-labelledby="modal-edit-1-Label" aria-hidden="true">
+                                      <div class="modal-dialog modal-warning" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar Valores</h5>
+                                          </div>
+                                          <div class="modal-body">
+                                              <form class="form-container">
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-microchip text text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="procesador1"
+                                                          placeholder="Procesador"
+                                                          list="Procesador"
+                                                        />
+                                                        <datalist id="Procesador">
+                                                          <option id="p1" value="Ryzen 5 3600"></option>
+                                                          <option id="p2" value="Core i5 9600k"></option>
+                                                          <option id="p3" value="Ryzen 5 2400g"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-memory text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="ram1"
+                                                          placeholder="Memoria Ram"
+                                                          list="Ram"
+                                                        />
+                                                        <datalist id="Ram">
+                                                          <option id="r1" value="4GB"></option>
+                                                          <option id="r2" value="8GB"></option>
+                                                          <option id="r2" value="16GB"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-digital-tachograph text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="tarjeta-grafica1"
+                                                          placeholder="Tarjeta Grafica"
+                                                          list="Tarjeta-grafica"
+                                                        />
+                                                        <datalist id="Tarjeta-grafica">
+                                                          <option id="tg1" value="RX580 4Gb"></option>
+                                                          <option id="tg2" value="GTX 1650 4GB"></option>
+                                                          <option id="tg2" value="GTX 1060 6GB"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-hdd text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="tipo-almacenamiento1"
+                                                          placeholder="Cantidad y tipo de Almacenamiento"
+                                                          list="Tipo-almacenamiento"
+                                                        />
+                                                        <datalist id="Tipo-almacenamiento">
+                                                          <option id="HDD1" value="Disco Duro 1TB"></option>
+                                                          <option id="SSD" value="Disco Solido 512GB"></option>
+                                                          <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                  <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-desktop text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="pantalla1"
+                                                          placeholder="Pantalla"
+                                                          list="Pantalla"
+                                                          />
+                                                        <datalist id="Pantalla">
+                                                          <option id="pant1" value="22 Pulgadas"></option>
+                                                          <option id="pant2" value="27 Pulgadas"></option>
+                                                          <option id="pant3" value="20 Pulgadas"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-charging-station text-dark "></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="fuente1"
+                                                          placeholder="Fuente"
+                                                          list="Fuente"
+                                                        />
+                                                        <datalist id="Fuente">
+                                                          <option id="f1" value="Fuente 600W reales"></option>
+                                                          <option id="f2" value="Fuente 450W genericos"></option>
+                                                          <option id="f3" value="Fuente 300W genericos"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-border-all text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="board1"
+                                                          placeholder="Board"
+                                                          list="Board"
+                                                        />
+                                                        <datalist id="Board">
+                                                          <option id="b1" value="B450M"></option>
+                                                          <option id="b2" value="B350M"></option>
+                                                          <option id="b3" value="B650M"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-row mb-3">
+                                                      <div class="col-1 col-md-1 my-1">
+                                                        <i class="fas fa-plus-circle text-dark"></i>
+                                                      </div>
+                                                      <div class="col-11 col-md-11 my-11">
+                                                        <input
+                                                          type="text"
+                                                          class="form-control shadow"
+                                                          name="option-rol"
+                                                          id="estado1"
+                                                          placeholder="Estado"
+                                                          list="Estado"
+                                                        />
+                                                        <datalist id="Estado">
+                                                          <option id="e1" value="Activo"></option>
+                                                          <option id="e2" value="Mantenimiento Preventivo"></option>
+                                                          <option id="e3" value="Mantenimiento Correctivo"></option>
+                                                        </datalist>
+                                                      </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-info" id="boton-editar-equipo-1">Guardar</button>
+                                          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="col-lg-7 col-sm-7">
-                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                    <button type="button" class="btn btn-danger" id="boton-eliminar-equipo-1" >
+                                      <i class="fas fa-trash-alt"></i>
+                                    </button>  
                                 </div>
-                            </div>
+                              </div>
                             </td>
                         </tr>
                         <tr>
@@ -373,10 +556,191 @@
                             <td>Ryzen 5 2400g</td><td>16</td><td>GTX 1650 4GB</td><td>1TB HDD</td><td>Samsung 22"</td><td>B350M</td><td>CM 500W</td><td>Activo</td><td>
                                 <div class="row d-flex">
                                     <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      <button class="btn btn-info" data-toggle="modal" data-target="#modal-edit-2" type="button">
+                                        <i class="fas fa-edit"></i>
+                                      </button> 
+  
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="modal-edit-2" tabindex="-1" role="dialog" aria-labelledby="modal-edit-1-Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-warning" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar Valores</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-container">
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-microchip text text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="procesador2"
+                                                            placeholder="Procesador"
+                                                            list="Procesador"
+                                                          />
+                                                          <datalist id="Procesador">
+                                                            <option id="p1" value="Ryzen 5 3600"></option>
+                                                            <option id="p2" value="Core i5 9600k"></option>
+                                                            <option id="p3" value="Ryzen 5 2400g"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-memory text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="ram2"
+                                                            placeholder="Memoria Ram"
+                                                            list="Ram"
+                                                          />
+                                                          <datalist id="Ram">
+                                                            <option id="r1" value="4GB"></option>
+                                                            <option id="r2" value="8GB"></option>
+                                                            <option id="r2" value="16GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-digital-tachograph text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tarjeta-grafica2"
+                                                            placeholder="Tarjeta Grafica"
+                                                            list="Tarjeta-grafica"
+                                                          />
+                                                          <datalist id="Tarjeta-grafica">
+                                                            <option id="tg1" value="RX580 4Gb"></option>
+                                                            <option id="tg2" value="GTX 1650 4GB"></option>
+                                                            <option id="tg2" value="GTX 1060 6GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-hdd text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tipo-almacenamiento2"
+                                                            placeholder="Cantidad y tipo de Almacenamiento"
+                                                            list="Tipo-almacenamiento"
+                                                          />
+                                                          <datalist id="Tipo-almacenamiento">
+                                                            <option id="HDD1" value="Disco Duro 1TB"></option>
+                                                            <option id="SSD" value="Disco Solido 512GB"></option>
+                                                            <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-desktop text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="pantalla2"
+                                                            placeholder="Pantalla"
+                                                            list="Pantalla"
+                                                            />
+                                                          <datalist id="Pantalla">
+                                                            <option id="pant1" value="22 Pulgadas"></option>
+                                                            <option id="pant2" value="27 Pulgadas"></option>
+                                                            <option id="pant3" value="20 Pulgadas"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-charging-station text-dark "></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="fuente2"
+                                                            placeholder="Fuente"
+                                                            list="Fuente"
+                                                          />
+                                                          <datalist id="Fuente">
+                                                            <option id="f1" value="Fuente 600W reales"></option>
+                                                            <option id="f2" value="Fuente 450W genericos"></option>
+                                                            <option id="f3" value="Fuente 300W genericos"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-border-all text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="board2"
+                                                            placeholder="Board"
+                                                            list="Board"
+                                                          />
+                                                          <datalist id="Board">
+                                                            <option id="b1" value="B450M"></option>
+                                                            <option id="b2" value="B350M"></option>
+                                                            <option id="b3" value="B650M"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-plus-circle text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="estado2"
+                                                            placeholder="Estado"
+                                                            list="Estado"
+                                                          />
+                                                          <datalist id="Estado">
+                                                            <option id="e1" value="Activo"></option>
+                                                            <option id="e2" value="Mantenimiento Preventivo"></option>
+                                                            <option id="e3" value="Mantenimiento Correctivo"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" id="boton-editar-equipo-2">Guardar</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                          
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                     </div>
                                     <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger" id="boton-eliminar-equipo-2"><i class="fas fa-trash-alt"></i></button>
                                     </div>
                                 </div>
                             </td>
@@ -386,10 +750,191 @@
                             <td>Ryzen 5 3400g</td><td>12</td><td>RX580 8Gb</td><td>512GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 600W</td><td>Preventivo</td><td>
                                 <div class="row d-flex">
                                     <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      <button class="btn btn-info" data-toggle="modal" data-target="#modal-edit-3" type="button">
+                                        <i class="fas fa-edit"></i>
+                                      </button> 
+  
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="modal-edit-3" tabindex="-1" role="dialog" aria-labelledby="modal-edit-1-Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-warning" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar Valores</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-container">
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-microchip text text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="procesador3"
+                                                            placeholder="Procesador"
+                                                            list="Procesador"
+                                                          />
+                                                          <datalist id="Procesador">
+                                                            <option id="p1" value="Ryzen 5 3600"></option>
+                                                            <option id="p2" value="Core i5 9600k"></option>
+                                                            <option id="p3" value="Ryzen 5 2400g"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-memory text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="ram3"
+                                                            placeholder="Memoria Ram"
+                                                            list="Ram"
+                                                          />
+                                                          <datalist id="Ram">
+                                                            <option id="r1" value="4GB"></option>
+                                                            <option id="r2" value="8GB"></option>
+                                                            <option id="r2" value="16GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-digital-tachograph text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tarjeta-grafica3"
+                                                            placeholder="Tarjeta Grafica"
+                                                            list="Tarjeta-grafica"
+                                                          />
+                                                          <datalist id="Tarjeta-grafica">
+                                                            <option id="tg1" value="RX580 4Gb"></option>
+                                                            <option id="tg2" value="GTX 1650 4GB"></option>
+                                                            <option id="tg2" value="GTX 1060 6GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-hdd text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tipo-almacenamiento3"
+                                                            placeholder="Cantidad y tipo de Almacenamiento"
+                                                            list="Tipo-almacenamiento"
+                                                          />
+                                                          <datalist id="Tipo-almacenamiento">
+                                                            <option id="HDD1" value="Disco Duro 1TB"></option>
+                                                            <option id="SSD" value="Disco Solido 512GB"></option>
+                                                            <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-desktop text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="pantalla3"
+                                                            placeholder="Pantalla"
+                                                            list="Pantalla"
+                                                            />
+                                                          <datalist id="Pantalla">
+                                                            <option id="pant1" value="22 Pulgadas"></option>
+                                                            <option id="pant2" value="27 Pulgadas"></option>
+                                                            <option id="pant3" value="20 Pulgadas"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-charging-station text-dark "></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="fuente3"
+                                                            placeholder="Fuente"
+                                                            list="Fuente"
+                                                          />
+                                                          <datalist id="Fuente">
+                                                            <option id="f1" value="Fuente 600W reales"></option>
+                                                            <option id="f2" value="Fuente 450W genericos"></option>
+                                                            <option id="f3" value="Fuente 300W genericos"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-border-all text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="board3"
+                                                            placeholder="Board"
+                                                            list="Board"
+                                                          />
+                                                          <datalist id="Board">
+                                                            <option id="b1" value="B450M"></option>
+                                                            <option id="b2" value="B350M"></option>
+                                                            <option id="b3" value="B650M"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-plus-circle text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="estado3"
+                                                            placeholder="Estado"
+                                                            list="Estado"
+                                                          />
+                                                          <datalist id="Estado">
+                                                            <option id="e1" value="Activo"></option>
+                                                            <option id="e2" value="Mantenimiento Preventivo"></option>
+                                                            <option id="e3" value="Mantenimiento Correctivo"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" id="boton-editar-equipo-3">Guardar</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                          
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div> 
                                     </div>
                                     <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger" id="boton-eliminar-equipo-3"><i class="fas fa-trash-alt"></i></button>
                                     </div>
                                 </div>
                             </td>
@@ -399,10 +944,191 @@
                             <td>Core i5 9G</td><td>8</td><td>GTX 1060 6GB</td><td>256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 600W</td><td>Preventivo</td><td>
                                 <div class="row d-flex">
                                     <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      <button class="btn btn-info" data-toggle="modal" data-target="#modal-edit-4" type="button">
+                                        <i class="fas fa-edit"></i>
+                                      </button> 
+  
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="modal-edit-4" tabindex="-1" role="dialog" aria-labelledby="modal-edit-1-Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-warning" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar Valores</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-container">
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-microchip text text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="procesador4"
+                                                            placeholder="Procesador"
+                                                            list="Procesador"
+                                                          />
+                                                          <datalist id="Procesador">
+                                                            <option id="p1" value="Ryzen 5 3600"></option>
+                                                            <option id="p2" value="Core i5 9600k"></option>
+                                                            <option id="p3" value="Ryzen 5 2400g"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-memory text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="ram4"
+                                                            placeholder="Memoria Ram"
+                                                            list="Ram"
+                                                          />
+                                                          <datalist id="Ram">
+                                                            <option id="r1" value="4GB"></option>
+                                                            <option id="r2" value="8GB"></option>
+                                                            <option id="r2" value="16GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-digital-tachograph text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tarjeta-grafica4"
+                                                            placeholder="Tarjeta Grafica"
+                                                            list="Tarjeta-grafica"
+                                                          />
+                                                          <datalist id="Tarjeta-grafica">
+                                                            <option id="tg1" value="RX580 4Gb"></option>
+                                                            <option id="tg2" value="GTX 1650 4GB"></option>
+                                                            <option id="tg2" value="GTX 1060 6GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-hdd text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tipo-almacenamiento4"
+                                                            placeholder="Cantidad y tipo de Almacenamiento"
+                                                            list="Tipo-almacenamiento"
+                                                          />
+                                                          <datalist id="Tipo-almacenamiento">
+                                                            <option id="HDD1" value="Disco Duro 1TB"></option>
+                                                            <option id="SSD" value="Disco Solido 512GB"></option>
+                                                            <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-desktop text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="pantalla4"
+                                                            placeholder="Pantalla"
+                                                            list="Pantalla"
+                                                            />
+                                                          <datalist id="Pantalla">
+                                                            <option id="pant1" value="22 Pulgadas"></option>
+                                                            <option id="pant2" value="27 Pulgadas"></option>
+                                                            <option id="pant3" value="20 Pulgadas"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-charging-station text-dark "></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="fuente4"
+                                                            placeholder="Fuente"
+                                                            list="Fuente"
+                                                          />
+                                                          <datalist id="Fuente">
+                                                            <option id="f1" value="Fuente 600W reales"></option>
+                                                            <option id="f2" value="Fuente 450W genericos"></option>
+                                                            <option id="f3" value="Fuente 300W genericos"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-border-all text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="board4"
+                                                            placeholder="Board"
+                                                            list="Board"
+                                                          />
+                                                          <datalist id="Board">
+                                                            <option id="b1" value="B450M"></option>
+                                                            <option id="b2" value="B350M"></option>
+                                                            <option id="b3" value="B650M"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-plus-circle text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="estado4"
+                                                            placeholder="Estado"
+                                                            list="Estado"
+                                                          />
+                                                          <datalist id="Estado">
+                                                            <option id="e1" value="Activo"></option>
+                                                            <option id="e2" value="Mantenimiento Preventivo"></option>
+                                                            <option id="e3" value="Mantenimiento Correctivo"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" id="boton-editar-equipo-4">Guardar</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                          
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>  
                                     </div>
                                     <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger" id="boton-eliminar-equipo-4"><i class="fas fa-trash-alt"></i></button>
                                     </div>
                                 </div>
                             </td>
@@ -412,10 +1138,191 @@
                             <td>Ryzen 5 3600</td><td>8</td><td>RX580 4Gb</td><td>1TB HDD / 256GB SSD</td><td>Samsung 22"</td><td>B450M</td><td>CM 500W</td><td>Activo</td><td>
                                 <div class="row d-flex">
                                     <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      <button class="btn btn-info" data-toggle="modal" data-target="#modal-edit-5" type="button">
+                                        <i class="fas fa-edit"></i>
+                                      </button> 
+  
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="modal-edit-5" tabindex="-1" role="dialog" aria-labelledby="modal-edit-1-Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-warning" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar Valores</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-container">
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-microchip text text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="procesador5"
+                                                            placeholder="Procesador"
+                                                            list="Procesador"
+                                                          />
+                                                          <datalist id="Procesador">
+                                                            <option id="p1" value="Ryzen 5 3600"></option>
+                                                            <option id="p2" value="Core i5 9600k"></option>
+                                                            <option id="p3" value="Ryzen 5 2400g"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-memory text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="ram5"
+                                                            placeholder="Memoria Ram"
+                                                            list="Ram"
+                                                          />
+                                                          <datalist id="Ram">
+                                                            <option id="r1" value="4GB"></option>
+                                                            <option id="r2" value="8GB"></option>
+                                                            <option id="r2" value="16GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-digital-tachograph text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tarjeta-grafica5"
+                                                            placeholder="Tarjeta Grafica"
+                                                            list="Tarjeta-grafica"
+                                                          />
+                                                          <datalist id="Tarjeta-grafica">
+                                                            <option id="tg1" value="RX580 4Gb"></option>
+                                                            <option id="tg2" value="GTX 1650 4GB"></option>
+                                                            <option id="tg2" value="GTX 1060 6GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-hdd text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tipo-almacenamiento5"
+                                                            placeholder="Cantidad y tipo de Almacenamiento"
+                                                            list="Tipo-almacenamiento"
+                                                          />
+                                                          <datalist id="Tipo-almacenamiento">
+                                                            <option id="HDD1" value="Disco Duro 1TB"></option>
+                                                            <option id="SSD" value="Disco Solido 512GB"></option>
+                                                            <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-desktop text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="pantalla5"
+                                                            placeholder="Pantalla"
+                                                            list="Pantalla"
+                                                            />
+                                                          <datalist id="Pantalla">
+                                                            <option id="pant1" value="22 Pulgadas"></option>
+                                                            <option id="pant2" value="27 Pulgadas"></option>
+                                                            <option id="pant3" value="20 Pulgadas"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-charging-station text-dark "></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="fuente5"
+                                                            placeholder="Fuente"
+                                                            list="Fuente"
+                                                          />
+                                                          <datalist id="Fuente">
+                                                            <option id="f1" value="Fuente 600W reales"></option>
+                                                            <option id="f2" value="Fuente 450W genericos"></option>
+                                                            <option id="f3" value="Fuente 300W genericos"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-border-all text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="board5"
+                                                            placeholder="Board"
+                                                            list="Board"
+                                                          />
+                                                          <datalist id="Board">
+                                                            <option id="b1" value="B450M"></option>
+                                                            <option id="b2" value="B350M"></option>
+                                                            <option id="b3" value="B650M"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-plus-circle text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="estado5"
+                                                            placeholder="Estado"
+                                                            list="Estado"
+                                                          />
+                                                          <datalist id="Estado">
+                                                            <option id="e1" value="Activo"></option>
+                                                            <option id="e2" value="Mantenimiento Preventivo"></option>
+                                                            <option id="e3" value="Mantenimiento Correctivo"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" id="boton-editar-equipo-5">Guardar</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                          
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div> 
                                     </div>
                                     <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger" id="boton-eliminar-equipo-5"><i class="fas fa-trash-alt"></i></button>
                                     </div>
                                 </div>
                             </td>
@@ -425,10 +1332,191 @@
                             <td>Ryzen 5 2400g</td><td>16</td><td>GTX 1650 4GB</td><td>1TB HDD</td><td>Samsung 22"</td><td>B350M</td><td>CM 500W</td><td>Correctivo</td><td>
                                 <div class="row d-flex">
                                     <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-info"><i class="fas fa-edit"></i></button> 
+                                      <button class="btn btn-info" data-toggle="modal" data-target="#modal-edit-6" type="button">
+                                        <i class="fas fa-edit"></i>
+                                      </button> 
+  
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="modal-edit-6" tabindex="-1" role="dialog" aria-labelledby="modal-edit-1-Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-warning" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title text-dark" id="exampleModalLabel">Modificar Valores</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-container">
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-microchip text text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="procesador6"
+                                                            placeholder="Procesador"
+                                                            list="Procesador"
+                                                          />
+                                                          <datalist id="Procesador">
+                                                            <option id="p1" value="Ryzen 5 3600"></option>
+                                                            <option id="p2" value="Core i5 9600k"></option>
+                                                            <option id="p3" value="Ryzen 5 2400g"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-memory text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="ram6"
+                                                            placeholder="Memoria Ram"
+                                                            list="Ram"
+                                                          />
+                                                          <datalist id="Ram">
+                                                            <option id="r1" value="4GB"></option>
+                                                            <option id="r2" value="8GB"></option>
+                                                            <option id="r2" value="16GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-digital-tachograph text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tarjeta-grafica6"
+                                                            placeholder="Tarjeta Grafica"
+                                                            list="Tarjeta-grafica"
+                                                          />
+                                                          <datalist id="Tarjeta-grafica">
+                                                            <option id="tg1" value="RX580 4Gb"></option>
+                                                            <option id="tg2" value="GTX 1650 4GB"></option>
+                                                            <option id="tg2" value="GTX 1060 6GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-hdd text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="tipo-almacenamiento6"
+                                                            placeholder="Cantidad y tipo de Almacenamiento"
+                                                            list="Tipo-almacenamiento"
+                                                          />
+                                                          <datalist id="Tipo-almacenamiento">
+                                                            <option id="HDD1" value="Disco Duro 1TB"></option>
+                                                            <option id="SSD" value="Disco Solido 512GB"></option>
+                                                            <option id="Hibrido" value="Disco Duro 1TB / Disco Solido 512GB"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                    <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-desktop text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="pantalla6"
+                                                            placeholder="Pantalla"
+                                                            list="Pantalla"
+                                                            />
+                                                          <datalist id="Pantalla">
+                                                            <option id="pant1" value="22 Pulgadas"></option>
+                                                            <option id="pant2" value="27 Pulgadas"></option>
+                                                            <option id="pant3" value="20 Pulgadas"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                            <i class="fas fa-charging-station text-dark "></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="fuente6"
+                                                            placeholder="Fuente"
+                                                            list="Fuente"
+                                                          />
+                                                          <datalist id="Fuente">
+                                                            <option id="f1" value="Fuente 600W reales"></option>
+                                                            <option id="f2" value="Fuente 450W genericos"></option>
+                                                            <option id="f3" value="Fuente 300W genericos"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-border-all text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="board6"
+                                                            placeholder="Board"
+                                                            list="Board"
+                                                          />
+                                                          <datalist id="Board">
+                                                            <option id="b1" value="B450M"></option>
+                                                            <option id="b2" value="B350M"></option>
+                                                            <option id="b3" value="B650M"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row mb-3">
+                                                        <div class="col-1 col-md-1 my-1">
+                                                          <i class="fas fa-plus-circle text-dark"></i>
+                                                        </div>
+                                                        <div class="col-11 col-md-11 my-11">
+                                                          <input
+                                                            type="text"
+                                                            class="form-control shadow"
+                                                            name="option-rol"
+                                                            id="estado6"
+                                                            placeholder="Estado"
+                                                            list="Estado"
+                                                          />
+                                                          <datalist id="Estado">
+                                                            <option id="e1" value="Activo"></option>
+                                                            <option id="e2" value="Mantenimiento Preventivo"></option>
+                                                            <option id="e3" value="Mantenimiento Correctivo"></option>
+                                                          </datalist>
+                                                        </div>
+                                                      </div>
+                                                  </form>
+                                              </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" id="boton-editar-equipo-6">Guardar</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                          
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div> 
                                     </div>
                                     <div class="col-lg-7 col-sm-7">
-                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                        <button class="btn btn-danger" id="boton-eliminar-equipo-6"><i class="fas fa-trash-alt"></i></button>
                                     </div>
                                 </div>
                             </td>
