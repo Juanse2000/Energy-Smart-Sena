@@ -71,7 +71,7 @@
           <a
             href="reservas-hoy.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
-            ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Hoy</a
+            ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Perndientes</a
           >
           <a
             href="reservas-todas.html"
@@ -84,18 +84,18 @@
             ><i class="fas fa-desktop lead mr-2"></i>Equipos Activos</a
           >
           <a
-            href="#"
+            href="equipos-preventivo.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-wrench lead mr-2"></i>Mantenimiento Preventivo</a
           >
           <a
-            href="#"
+            href="equipos-correctivo.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a
           >
-          <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
+          <a href="todos-mantenimientos.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
           <a
-            href="#"
+            href="usuarios.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-user-astronaut lead mr-2"></i>Usuarios</a
           >
@@ -169,9 +169,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-9 col-md-8">
-                  <h1 class="font-weight-bold mb-0 text-dark">Reservas Hoy</h1>
+                  <h1 class="font-weight-bold mb-0 text-dark">Reservas Pendientes</h1>
                   <p class="lead text-dark">
-                    Revisa las reservaciones hechas para el dia de hoy
+                    Revisa las reservaciones que estan pendientes, en este espacio podras aprobar o cancelar la reserva.
                   </p>
                 </div>
               </div>
@@ -193,56 +193,108 @@
                         <th>IdReserva</th>
                         <th>IdUsuario</th>
                         <th>IdEquipo</th>
-                        <th>Usuario</th>
+                        <th>Nombre Usuario</th>
+                        <th>Correo</th>
                         <th>Fecha</th>
                         <th>Hora</th>
                         <th>Valor</th>
+                        <th>Acciones</th>
                       </thead>
                       <tbody>
                         <tr>
                           <td>18</td>
                           <td>1000588779</td>
                           <td>1</td>
+                          <td>Juan Garcia</td>
                           <td>cliente1@gmail.com</td>
                           <td>18/06/2020</td>
                           <td>16:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-4 col-sm-4">
+                                  <button class="btn btn-success"><i class="fas fa-check-circle"></i></button> 
+                              </div>
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>17</td>
                           <td>1023654856</td>
                           <td>2</td>
+                          <td>Roger Martinez</td>
                           <td>cliente2@gmail.com</td>
                           <td>18/06/2020</td>
                           <td>16:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-4 col-sm-4">
+                                  <button class="btn btn-success"><i class="fas fa-check-circle"></i></button> 
+                              </div>
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>16</td>
                           <td>1000588779</td>
                           <td>4</td>
+                          <td>Manuel Beltran</td>
                           <td>cliente1@gmail.com</td>
                           <td>18/06/2020</td>
                           <td>14:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-4 col-sm-4">
+                                  <button class="btn btn-success"><i class="fas fa-check-circle"></i></button> 
+                              </div>
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>15</td>
                           <td>52355864</td>
                           <td>6</td>
+                          <td>Luis suarez</td>
                           <td>cliente4@gmail.com</td>
                           <td>17/06/2020</td>
                           <td>16:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-4 col-sm-4">
+                                  <button class="btn btn-success"><i class="fas fa-check-circle"></i></button> 
+                              </div>
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>14</td>
                           <td>75639875</td>
                           <td>3</td>
+                          <td>Luis Suarez</td>
                           <td>cliente5@gmail.com</td>
                           <td>17/06/2020</td>
                           <td>18:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-4 col-sm-4">
+                                  <button class="btn btn-success"><i class="fas fa-check-circle"></i></button> 
+                              </div>
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                       </tbody>
                     </table>

@@ -72,7 +72,7 @@
             <a
               href="reservas-hoy.html"
               class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
-              ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Hoy</a
+              ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Pendientes</a
             >
             <a
               href="reservas-todas.html"
@@ -80,23 +80,23 @@
               ><i class="fas fa-calendar-alt lead mr-2"></i>Todas las reservas</a
             >
             <a
-              href="#"
+              href="equipos-activos.html"
               class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
               ><i class="fas fa-desktop lead mr-2"></i>Equipos Activos</a
             >
             <a
-              href="#"
+              href="equipos-preventivo.html"
               class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
               ><i class="fas fa-wrench lead mr-2"></i>Mantenimiento Preventivo</a
             >
             <a
-              href="#"
+              href="equipos-correctivo.html"
               class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
               ><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a
             >
-            <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
+            <a href="todos-mantenimientos.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
             <a
-              href="#"
+              href="usuarios.html"
               class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
               ><i class="fas fa-user-astronaut lead mr-2"></i>Usuarios</a
             >
@@ -191,130 +191,100 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#editar-perfil-admin">
                                 Editar perfil
                               </button>
                               <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-warning" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Perfil</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form class="form-container">
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-laptop-code text-dark"></i>
+                              <div class="modal fade" id="editar-perfil-admin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-warning" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Perfil</h5>
                                     </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="procesador"
-                                        placeholder="Codigo del equipo "
-                                        list="Procesador"
-                                      />
-                                      <datalist id="Procesador">
-                                        <option id="c1" value="112345"></option>
-                                        <option id="c2" value="113245"></option>
-                                        <option id="c3" value="114236"></option>
-                                        <option id="c4" value="115896"></option>
-                                        <option id="c5" value="116974"></option>
-                                        <option id="c6" value="117842"></option>
-                                      </datalist>
+                                    <div class="modal-body">
+                                      <form class="form-container">
+                                        <div class="form-row mb-3">
+                                          <div class="col-1 col-md-1 my-1">
+                                            <i class="fas fa-user icon-editarA text-dark"></i>
+                                          </div>
+                                          <div class="col-11 col-md-11 my-11">
+                                            <input
+                                              type="text"
+                                              class="form-control shadow"
+                                              id="nombre-completo-cliente"
+                                              placeholder="Nombre completo"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                          <div class="col-1 col-md-1 my-1">
+                                            <i class="fas fa-envelope icon-editarA text-dark"></i>
+                                          </div>
+                                          <div class="col-11 col-md-11 my-11">
+                                            <input
+                                              type="email"
+                                              class="form-control shadow"
+                                              id="correo-electronico-cliente"
+                                              placeholder="Correo electronico"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                          <div class="col-1 col-md-1 my-1">
+                                            <i class="fas fa-phone text-dark"></i>
+                                          </div>
+                                          <div class="col-11 col-md-11 my-11">
+                                            <input
+                                              type="text"
+                                              class="form-control shadow"
+                                              id="numero-celular-cliente"
+                                              placeholder="Numero de celular"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                          <div class="col-1 col-md-1 my-1">
+                                            <i class="fas fa-key icon-editarA text-dark"></i>
+                                          </div>
+                                          <div class="col-11 col-md-11 my-11">
+                                            <input
+                                              type="password"
+                                              id="registro-contraseña"
+                                              class="form-control shadow"
+                                              placeholder="Contraseña"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="form-row mb-3">
+                                          <div class="col-1 col-md-1 my-1">
+                                            <i class="fas fa-check-circle icon-editarA text-dark"></i>
+                                          </div>
+                                          <div class="col-11 col-md-11 my-11">
+                                            <input
+                                              type="password"
+                                              id="registro-validar-contraseña"
+                                              class="form-control shadow"
+                                              placeholder="Repetir Contraseña"
+                                            />
+                                          </div>
+                                        </div>
+                                            <div class="form-row mb-3">
+                                              <div class="col-1 col-md-1 my-1">
+                                                <i class="fas fa-user-astronaut icon-editarA text-dark"></i>
+                                              </div>
+                                              <div class="col-11 col-md-11 my-11">
+                                                <textarea placeholder="Escriba una descripcion de su perfil: ¿Quien eres?" id="texto-perfil-cliente" cols="30" rows="10" class="form-control shadow"></textarea>
+                                              </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                  <div class="col-12 col-md-12">
-                                    <label for="fecha-ingreso-preventivo">Fecha de ingreso</label>
-                                  </div>
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-sign-in-alt text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="date"
-                                        class="form-control shadow"
-                                        id="fecha-ingreso-preventivo"
-                                        placeholder="Fecha de ingreso"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="form-row mb-3">
-                                    <div class="col-12 col-md-12">
-                                      <label for="fecha-salida-preventivo">Fecha de salida</label>
-                                    </div>
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-sign-out-alt text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="date"
-                                        class="form-control shadow"
-                                        id="fecha-salida-preventivo"
-                                        placeholder="Fecha de salida"
-                                      />
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-user-tie text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="tipo-almacenamiento"
-                                        placeholder="Administrador que realizara el mantenimiento"
-                                        list="admin-preventivo"
-                                      />
-                                      <datalist id="admin-preventivo">
-                                        <option id="admin1" value="Sebastian Martinez"></option>
-                                        <option id="admin2" value="Cristian Avila"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-hammer text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="pantalla"
-                                        placeholder="Tipo de Mantenimiento"
-                                        list="tipo-preventivo"
-                                        />
-                                      <datalist id="tipo-preventivo">
-                                        <option id="tp1" value="Instalacion de programas"></option>
-                                        <option id="tp2" value="Eliminacion de basura/cookies/trash"></option>
-                                        <option id="tp3" value="Limpieza de hardware"></option>
-                                      </datalist>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                                      
                                     </div>
                                   </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-eye text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <textarea placeholder="Escriba las observaciones del mantenimiento de ser necesario" id="texto-preventivo" cols="30" rows="10" class="form-control shadow"></textarea>
-                                    </div>
-                                  </div>
-                              </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                         <div class="row">
@@ -342,7 +312,7 @@
                                                         <label>Nombres</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>Sebastian Martinez/p>
+                                                        <p>Sebastian Martinez
                                                     </div>
                                                 </div>
                                                 <div class="row">

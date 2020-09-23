@@ -11,6 +11,8 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/perfil.css" />
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
@@ -35,10 +37,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mr-3">
-              <a class="nav-link font-weight-bold text-light" href="#servicios">Reservaciones</a>
+              <a class="nav-link font-weight-bold text-light" href="interfaz-cliente.html">Inicio</a>
+          </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link font-weight-bold text-light" href="reservas-cliente.html">Reservaciones</a>
             </li>
             <li class="nav-item mr-3">
-              <a class="nav-link font-weight-bold text-light" href="#nosotros">Perfil</a>
+              <a class="nav-link font-weight-bold text-light" href="perfil-cliente.html">Perfil</a>
             </li>
             <li class="nav-item mr-3">
                 <a class="nav-link font-weight-bold text-light" href="../index.html">Salir</a>
@@ -49,10 +54,199 @@
 
       <section class="bg-dark py-5">
         <div class="container mt-3 mb-5">
-            <div class="row d-flex">
-                
-            </div>
-        </div>
+          <h1 class="text-center font-weight-bold mb-5">Mi Perfil</h1>
+          <!-- Page Content -->
+          <div id="content" class="bg-grey w-100">
+            <section class="bg-light py-3">
+                <div class="container emp-profile">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-img">
+                                    <img src="../img/perfil-cliente.jpg" class="img-fluid rounded-circle"/>
+                                    <div class="file btn btn-lg btn-dark">
+                                        Change Photo
+                                        <input type="file" name="file"/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="profile-head">
+                                            <h5>
+                                                Felipe Gomez
+                                            </h5>
+                                            <h3 class="proile-rating">No. Reservas : <span>8</span></h3>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+                                Editar perfil
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-warning" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title text-dark" id="exampleModalLabel">Editar Perfil</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-container">
+                                          <div class="form-row mb-3">
+                                            <div class="col-1 col-md-1 my-1">
+                                              <i class="fas fa-user icon-editarA text-dark"></i>
+                                            </div>
+                                            <div class="col-11 col-md-11 my-11">
+                                              <input
+                                                type="text"
+                                                class="form-control shadow"
+                                                id="nombre-completo-cliente"
+                                                placeholder="Nombre completo"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="form-row mb-3">
+                                            <div class="col-1 col-md-1 my-1">
+                                              <i class="fas fa-envelope icon-editarA text-dark"></i>
+                                            </div>
+                                            <div class="col-11 col-md-11 my-11">
+                                              <input
+                                                type="email"
+                                                class="form-control shadow"
+                                                id="correo-electronico-cliente"
+                                                placeholder="Correo electronico"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="form-row mb-3">
+                                            <div class="col-1 col-md-1 my-1">
+                                              <i class="fas fa-phone text-dark"></i>
+                                            </div>
+                                            <div class="col-11 col-md-11 my-11">
+                                              <input
+                                                type="text"
+                                                class="form-control shadow"
+                                                id="numero-celular-cliente"
+                                                placeholder="Numero de celular"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="form-row mb-3">
+                                            <div class="col-1 col-md-1 my-1">
+                                              <i class="fas fa-key icon-editarA text-dark"></i>
+                                            </div>
+                                            <div class="col-11 col-md-11 my-11">
+                                              <input
+                                                type="password"
+                                                id="registro-contraseña"
+                                                class="form-control shadow"
+                                                placeholder="Contraseña"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="form-row mb-3">
+                                            <div class="col-1 col-md-1 my-1">
+                                              <i class="fas fa-check-circle icon-editarA text-dark"></i>
+                                            </div>
+                                            <div class="col-11 col-md-11 my-11">
+                                              <input
+                                                type="password"
+                                                id="registro-validar-contraseña"
+                                                class="form-control shadow"
+                                                placeholder="Repetir Contraseña"
+                                              />
+                                            </div>
+                                          </div>
+                                              <div class="form-row mb-3">
+                                                <div class="col-1 col-md-1 my-1">
+                                                  <i class="fas fa-user-astronaut icon-editarA text-dark"></i>
+                                                </div>
+                                                <div class="col-11 col-md-11 my-11">
+                                                  <textarea placeholder="Escriba una descripcion de su perfil: ¿Quien eres?" id="texto-perfil-cliente" cols="30" rows="10" class="form-control shadow"></textarea>
+                                                </div>
+                                              </div>
+                                          </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-work">
+                                    <p>Descripcion</p>
+                                    <p>
+                                        Gamer profesional de LOL, he competido en mas de 30 torneos a nivel nacional, <br/>
+                                        tambien he participado en 2 torneos internacionales, hago parte del team <br/>
+                                        Parallel Sports, soy una persona que siempre tiene ganas de ganar, intento <br/>
+                                        dar siempre lo mejor de mi.
+                                        <br/>
+                                        <br/>
+                                        Adoro juegos como Call of Dutty, Halo y Gears of war, soy amante de los <br/>
+                                        shooters.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="tab-content profile-tab" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="letra-perfil">User Id</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>20</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="letra-perfil">Nombres</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Felipe Gomez</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="letra-perfil">Email</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>cliente20@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="letra-perfil">Telefono</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>310 3588745</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label class="letra-perfil">Rol</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Cliente</p>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>           
+                </div>
     </section>
 <footer class="bg-dark-x py-5 border-top">
   <div class="container">

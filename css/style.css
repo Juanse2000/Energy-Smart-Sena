@@ -38,6 +38,9 @@ body{
 .logo{
     width: 200px;
 }
+.letra-perfil{
+    color: var(--dark-xx) !important;
+}
 /* Establecer el valor minimo de la altura de la letra del navbar */
 .navbar{
     min-height: 5rem;

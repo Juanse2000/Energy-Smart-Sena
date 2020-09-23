@@ -65,7 +65,7 @@
           <a
             href="reservas-hoy.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
-            ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Hoy</a
+            ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Pendientes</a
           >
           <a
             href="reservas-todas.html"
@@ -78,18 +78,20 @@
             ><i class="fas fa-desktop lead mr-2"></i>Equipos Activos</a
           >
           <a
-            href="#"
+            href="equipos-preventivo.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-wrench lead mr-2"></i>Mantenimiento Preventivo</a
           >
           <a
-            href="#"
+            href="equipos-correctivo.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a
           >
-          <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i></i>Todos los Mantenimientos</a>
+          <a href="todos-mantenimientos.html" 
+          class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">
+          <i class="fas fa-poll-h lead mr-2"></i></i>Todos los Mantenimientos</a>
           <a
-            href="#"
+            href="usuarios.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-user-astronaut lead mr-2"></i>Usuarios</a
           >
@@ -162,6 +164,7 @@
                         <th>Fecha</th>
                         <th>Hora</th>
                         <th>Valor</th>
+                        <th>Acciones</th>
                       </thead>
                       <tbody>
                         <tr>
@@ -172,6 +175,12 @@
                           <td>18/06/2020</td>
                           <td>16:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-6 col-sm-6">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>17</td>
@@ -181,6 +190,12 @@
                           <td>18/06/2020</td>
                           <td>16:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>16</td>
@@ -190,6 +205,12 @@
                           <td>18/06/2020</td>
                           <td>14:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>15</td>
@@ -199,6 +220,12 @@
                           <td>17/06/2020</td>
                           <td>16:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <td>14</td>
@@ -208,6 +235,12 @@
                           <td>17/06/2020</td>
                           <td>18:00</td>
                           <td>$2500</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-7 col-sm-7">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                             <td>18</td>
@@ -217,6 +250,12 @@
                             <td>18/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>17</td>
@@ -226,6 +265,12 @@
                             <td>18/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>16</td>
@@ -235,6 +280,12 @@
                             <td>18/06/2020</td>
                             <td>14:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>15</td>
@@ -244,6 +295,12 @@
                             <td>17/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>14</td>
@@ -253,6 +310,12 @@
                             <td>17/06/2020</td>
                             <td>18:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>18</td>
@@ -262,6 +325,12 @@
                             <td>18/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>17</td>
@@ -271,6 +340,12 @@
                             <td>18/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>16</td>
@@ -280,6 +355,12 @@
                             <td>18/06/2020</td>
                             <td>14:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>15</td>
@@ -289,6 +370,12 @@
                             <td>17/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>14</td>
@@ -298,6 +385,12 @@
                             <td>17/06/2020</td>
                             <td>18:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>18</td>
@@ -307,6 +400,12 @@
                             <td>18/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>17</td>
@@ -316,6 +415,12 @@
                             <td>18/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>16</td>
@@ -325,6 +430,12 @@
                             <td>18/06/2020</td>
                             <td>14:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>15</td>
@@ -334,6 +445,12 @@
                             <td>17/06/2020</td>
                             <td>16:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                           <tr>
                             <td>14</td>
@@ -343,6 +460,12 @@
                             <td>17/06/2020</td>
                             <td>18:00</td>
                             <td>$2500</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-7 col-sm-7">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                           </tr>
                       </tbody>
                     </table>

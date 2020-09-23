@@ -68,7 +68,7 @@
           <a
             href="reservas-hoy.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
-            ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Hoy</a
+            ><i class="fas fa-calendar-check lead mr-2"></i>Reservas Pendientes</a
           >
           <a
             href="reservas-todas.html"
@@ -90,7 +90,7 @@
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
             ><i class="fas fa-tools lead mr-2"></i>Mantenimiento Correctivo</a
           >
-          <a href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
+          <a href="todos-mantenimientos.html" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"><i class="fas fa-poll-h lead mr-2"></i>Todos los Mantenimientos</a>
           <a
             href="usuarios.html"
             class="list-group-item list-group-item-action text-muted bg-light p-3 border-0"
@@ -166,133 +166,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-9 col-md-8">
-                  <h1 class="font-weight-bold mb-0 text-dark">Equipos en Mantenimiento Preventivo</h1>
+                  <h1 class="font-weight-bold mb-0 text-dark">Historico de mantenimientos</h1>
                   <p class="lead text-dark">
                     Aca encontrara los registros de todos los mantenimientos hechos, tanto de preventivos como de correctivos.
                   </p>
                 </div>
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-warning" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title text-dark" id="exampleModalLabel">Agregar Nuevo Equipo a Mantenimiento Preventivo</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form class="form-container">
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-laptop-code text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="procesador"
-                                        placeholder="Codigo del equipo "
-                                        list="Procesador"
-                                      />
-                                      <datalist id="Procesador">
-                                        <option id="c1" value="112345"></option>
-                                        <option id="c2" value="113245"></option>
-                                        <option id="c3" value="114236"></option>
-                                        <option id="c4" value="115896"></option>
-                                        <option id="c5" value="116974"></option>
-                                        <option id="c6" value="117842"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                  <div class="col-12 col-md-12">
-                                    <label for="fecha-ingreso-preventivo">Fecha de ingreso</label>
-                                  </div>
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-sign-in-alt text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="date"
-                                        class="form-control shadow"
-                                        id="fecha-ingreso-preventivo"
-                                        placeholder="Fecha de ingreso"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="form-row mb-3">
-                                    <div class="col-12 col-md-12">
-                                      <label for="fecha-salida-preventivo">Fecha de salida</label>
-                                    </div>
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-sign-out-alt text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="date"
-                                        class="form-control shadow"
-                                        id="fecha-salida-preventivo"
-                                        placeholder="Fecha de salida"
-                                      />
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-user-tie text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="tipo-almacenamiento"
-                                        placeholder="Administrador que realizara el mantenimiento"
-                                        list="admin-preventivo"
-                                      />
-                                      <datalist id="admin-preventivo">
-                                        <option id="admin1" value="Sebastian Martinez"></option>
-                                        <option id="admin2" value="Cristian Avila"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-hammer text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <input
-                                        type="text"
-                                        class="form-control shadow"
-                                        name="option-rol"
-                                        id="pantalla"
-                                        placeholder="Tipo de Mantenimiento"
-                                        list="tipo-preventivo"
-                                        />
-                                      <datalist id="tipo-preventivo">
-                                        <option id="tp1" value="Instalacion de programas"></option>
-                                        <option id="tp2" value="Eliminacion de basura/cookies/trash"></option>
-                                        <option id="tp3" value="Limpieza de hardware"></option>
-                                      </datalist>
-                                    </div>
-                                  </div>
-                                <div class="form-row mb-3">
-                                    <div class="col-1 col-md-1 my-1">
-                                      <i class="fas fa-eye text-dark"></i>
-                                    </div>
-                                    <div class="col-11 col-md-11 my-11">
-                                      <textarea placeholder="Escriba las observaciones del mantenimiento de ser necesario" id="texto-preventivo" cols="30" rows="10" class="form-control shadow"></textarea>
-                                    </div>
-                                  </div>
-                              </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-info" id="boton-agregar-equipo">Agregar</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
               </div>
             </div>
           </section>
@@ -311,47 +189,108 @@
                     <thead>
                         <th>IdMantenimeinto</th><th>IdEquipo</th><th>Preventivo | Correctivo</th>
                         <th>Fecha de Ingreso</th><th>Fecha de Salida</th><th>Tecnico<th>Tipo de Mantenimiento<th>Observaciones</th>
+                        <th>Acciones</th>
                     <tbody>
                         <tr>
                             <td>10</td><td>2</td><td>Preventivo</td>
                             <td>12/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Limpieza de hardware<td>Limpieza general del hardware</td>
+                            <td>
+                              <div class="row d-flex">
+                                <div class="col-lg-6 col-sm-6">
+                                  <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                              </div>
+                            </td>
                         </tr>
                         <tr>
                           <td>9</td><td>3</td><td>Correctivo</td>
                           <td>13/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Eliminar basura/cookies/trash</td><td>No hay observaciones</td>
+                          <td>
+                            <div class="row d-flex">
+                              <div class="col-lg-6 col-sm-6">
+                                <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                          </td>
                       </tr>
                       <tr>
                         <td>8</td><td>2</td><td>Preventivo</td>
                         <td>12/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Limpieza de hardware<td>Limpieza general del hardware</td>
+                        <td>
+                          <div class="row d-flex">
+                            <div class="col-lg-6 col-sm-6">
+                              <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                          </div>
+                        </td>
                     </tr>
                     <tr>
                       <td>7</td><td>3</td><td>Correctivo</td>
                       <td>13/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Eliminar basura/cookies/trash</td><td>No hay observaciones</td>
+                      <td>
+                        <div class="row d-flex">
+                          <div class="col-lg-6 col-sm-6">
+                            <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                      </td>
                   </tr>
                   <tr>
                     <td>6</td><td>2</td><td>Preventivo</td>
                     <td>12/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Limpieza de hardware<td>Limpieza general del hardware</td>
+                    <td>
+                      <div class="row d-flex">
+                        <div class="col-lg-6 col-sm-6">
+                          <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                      </div>
+                    </td>
                 </tr>
                 <tr>
                   <td>5</td><td>3</td><td>Correctivo</td>
                   <td>13/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Eliminar basura/cookies/trash</td><td>No hay observaciones</td>
+                  <td>
+                    <div class="row d-flex">
+                      <div class="col-lg-6 col-sm-6">
+                        <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td>4</td><td>2</td><td>Preventivo</td>
                 <td>12/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Limpieza de hardware<td>Limpieza general del hardware</td>
+                <td>
+                  <div class="row d-flex">
+                    <div class="col-lg-6 col-sm-6">
+                      <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                  </div>
+                </td>
             </tr>
             <tr>
               <td>3</td><td>3</td><td>Correctivo</td>
               <td>13/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Eliminar basura/cookies/trash</td><td>No hay observaciones</td>
+              <td>
+                <div class="row d-flex">
+                  <div class="col-lg-6 col-sm-6">
+                    <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                </div>
+              </td>
             
                 </tr>
                 <tr>
                     <td>2</td><td>2</td><td>Preventivo</td>
                     <td>12/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Limpieza de hardware<td>Limpieza general del hardware</td>
+                    <td>
+                      <div class="row d-flex">
+                        <div class="col-lg-6 col-sm-6">
+                          <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                      </div>
+                    </td>
                 </tr>
                 <tr>
                   <td>1</td><td>3</td><td>Correctivo</td>
                   <td>13/08/2020</td><td>13/08/2020</td><td>Sebastian Martinez</td><td>Eliminar basura/cookies/trash</td><td>No hay observaciones</td>
+                  <td>
+                    <div class="row d-flex">
+                      <div class="col-lg-6 col-sm-6">
+                        <button class="btn btn-danger" id=""><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                  </td>
                 </tr>
                     </tbody>
                     </table>
